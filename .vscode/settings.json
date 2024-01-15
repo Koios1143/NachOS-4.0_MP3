@@ -1,0 +1,10 @@
+{
+    "files.associations": {
+        "new": "cpp",
+        "initializer_list": "cpp",
+        "array": "cpp",
+        "limits": "cpp",
+        "syscall.h": "c",
+        "iostream": "cpp"
+    }
+}

@@ -1,0 +1,2559 @@
+Entering main
+fileIO_test2
+Scheduling interrupt handler the timer at time = 100
+Scheduling interrupt handler the console read at time = 100
+Initializing the disk.
+Created socket SOCKET_0
+Scheduling interrupt handler the network recv at time = 100
+Forking thread: postal worker f(a): 134591648 0x881d690
+	interrupts: off -> off
+Putting thread on ready list: postal worker
+	interrupts: off -> off
+	interrupts: off -> on
+== Tick 10 ==
+	interrupts: on -> off
+Time: 10, interrupts off
+Pending interrupts:
+Interrupt handler timer, scheduled at 100Interrupt handler console read, scheduled at 100Interrupt handler network recv, scheduled at 100
+End of pending interrupts
+	interrupts: off -> on
+Forking thread: fileIO_test2 f(a): 134563105 0x8825fd0
+	interrupts: on -> off
+Putting thread on ready list: fileIO_test2
+	interrupts: off -> on
+== Tick 20 ==
+	interrupts: on -> off
+Time: 20, interrupts off
+Pending interrupts:
+Interrupt handler timer, scheduled at 100Interrupt handler console read, scheduled at 100Interrupt handler network recv, scheduled at 100
+End of pending interrupts
+	interrupts: off -> on
+	interrupts: on -> off
+Finishing thread: main
+Sleeping thread: main
+In Thread::Sleep, Sleeping thread: main, 20
+Switching from: main to: postal worker
+Beginning thread: postal worker
+Deleting thread: main
+	interrupts: off -> on
+== Tick 30 ==
+	interrupts: on -> off
+Time: 30, interrupts off
+Pending interrupts:
+Interrupt handler timer, scheduled at 100Interrupt handler console read, scheduled at 100Interrupt handler network recv, scheduled at 100
+End of pending interrupts
+	interrupts: off -> on
+In Semaphore::P(), 30
+	interrupts: on -> off
+Sleeping thread: postal worker
+In Thread::Sleep, Sleeping thread: postal worker, 30
+Switching from: postal worker to: fileIO_test2
+Beginning thread: fileIO_test2
+	interrupts: off -> on
+== Tick 40 ==
+	interrupts: on -> off
+Time: 40, interrupts off
+Pending interrupts:
+Interrupt handler timer, scheduled at 100Interrupt handler console read, scheduled at 100Interrupt handler network recv, scheduled at 100
+End of pending interrupts
+	interrupts: off -> on
+Initializing address space: 15, 1920
+Initializing code segment.
+0, 752
+Initializing read only data segment.
+752, 64
+Initializing stack pointer: 1904
+Starting program in thread: fileIO_test2, at time: 40
+In Machine::Run(), into OneInstruction == Tick 40 ==
+Reading VA 0, size 4
+	Translate 0 , read
+phys addr = 0
+	value read = 201326676
+At PC = 0	JAL 84
+In Machine::Run(), return from OneInstruction  == Tick 40 ==
+In Machine::Run(), into OneTick == Tick 40 ==
+== Tick 41 ==
+	interrupts: on -> off
+Time: 41, interrupts off
+Pending interrupts:
+Interrupt handler timer, scheduled at 100Interrupt handler console read, scheduled at 100Interrupt handler network recv, scheduled at 100
+End of pending interrupts
+	interrupts: off -> on
+In Machine::Run(), return from OneTick == Tick 41 ==
+In Machine::Run(), into OneInstruction == Tick 41 ==
+Reading VA 4, size 4
+	Translate 4 , read
+phys addr = 4
+	value read = 0
+At PC = 4	SLL r0,r0,0
+In Machine::Run(), return from OneInstruction  == Tick 41 ==
+In Machine::Run(), into OneTick == Tick 41 ==
+== Tick 42 ==
+	interrupts: on -> off
+Time: 42, interrupts off
+Pending interrupts:
+Interrupt handler timer, scheduled at 100Interrupt handler console read, scheduled at 100Interrupt handler network recv, scheduled at 100
+End of pending interrupts
+	interrupts: off -> on
+In Machine::Run(), return from OneTick == Tick 42 ==
+In Machine::Run(), into OneInstruction == Tick 42 ==
+Reading VA 336, size 4
+	Translate 336 , read
+phys addr = 336
+	value read = 666763160
+At PC = 336	ADDIU r29,r29,-104
+In Machine::Run(), return from OneInstruction  == Tick 42 ==
+In Machine::Run(), into OneTick == Tick 42 ==
+== Tick 43 ==
+	interrupts: on -> off
+Time: 43, interrupts off
+Pending interrupts:
+Interrupt handler timer, scheduled at 100Interrupt handler console read, scheduled at 100Interrupt handler network recv, scheduled at 100
+End of pending interrupts
+	interrupts: off -> on
+In Machine::Run(), return from OneTick == Tick 43 ==
+In Machine::Run(), into OneInstruction == Tick 43 ==
+Reading VA 340, size 4
+	Translate 340 , read
+phys addr = 340
+	value read = -1346437020
+At PC = 340	SW r31,100(r29)
+Writing VA 1900, size 4, value 8
+	Translate 1900 , write
+phys addr = 1900
+In Machine::Run(), return from OneInstruction  == Tick 43 ==
+In Machine::Run(), into OneTick == Tick 43 ==
+== Tick 44 ==
+	interrupts: on -> off
+Time: 44, interrupts off
+Pending interrupts:
+Interrupt handler timer, scheduled at 100Interrupt handler console read, scheduled at 100Interrupt handler network recv, scheduled at 100
+End of pending interrupts
+	interrupts: off -> on
+In Machine::Run(), return from OneTick == Tick 44 ==
+In Machine::Run(), into OneInstruction == Tick 44 ==
+Reading VA 344, size 4
+	Translate 344 , read
+phys addr = 344
+	value read = -1346502560
+At PC = 344	SW r30,96(r29)
+Writing VA 1896, size 4, value 0
+	Translate 1896 , write
+phys addr = 1896
+In Machine::Run(), return from OneInstruction  == Tick 44 ==
+In Machine::Run(), into OneTick == Tick 44 ==
+== Tick 45 ==
+	interrupts: on -> off
+Time: 45, interrupts off
+Pending interrupts:
+Interrupt handler timer, scheduled at 100Interrupt handler console read, scheduled at 100Interrupt handler network recv, scheduled at 100
+End of pending interrupts
+	interrupts: off -> on
+In Machine::Run(), return from OneTick == Tick 45 ==
+In Machine::Run(), into OneInstruction == Tick 45 ==
+Reading VA 348, size 4
+	Translate 348 , read
+phys addr = 348
+	value read = 60878881
+At PC = 348	ADDU r30,r29,r0
+In Machine::Run(), return from OneInstruction  == Tick 45 ==
+In Machine::Run(), into OneTick == Tick 45 ==
+== Tick 46 ==
+	interrupts: on -> off
+Time: 46, interrupts off
+Pending interrupts:
+Interrupt handler timer, scheduled at 100Interrupt handler console read, scheduled at 100Interrupt handler network recv, scheduled at 100
+End of pending interrupts
+	interrupts: off -> on
+In Machine::Run(), return from OneTick == Tick 46 ==
+In Machine::Run(), into OneInstruction == Tick 46 ==
+Reading VA 352, size 4
+	Translate 352 , read
+phys addr = 352
+	value read = 201326673
+At PC = 352	JAL 81
+In Machine::Run(), return from OneInstruction  == Tick 46 ==
+In Machine::Run(), into OneTick == Tick 46 ==
+== Tick 47 ==
+	interrupts: on -> off
+Time: 47, interrupts off
+Pending interrupts:
+Interrupt handler timer, scheduled at 100Interrupt handler console read, scheduled at 100Interrupt handler network recv, scheduled at 100
+End of pending interrupts
+	interrupts: off -> on
+In Machine::Run(), return from OneTick == Tick 47 ==
+In Machine::Run(), into OneInstruction == Tick 47 ==
+Reading VA 356, size 4
+	Translate 356 , read
+phys addr = 356
+	value read = 0
+At PC = 356	SLL r0,r0,0
+In Machine::Run(), return from OneInstruction  == Tick 47 ==
+In Machine::Run(), into OneTick == Tick 47 ==
+== Tick 48 ==
+	interrupts: on -> off
+Time: 48, interrupts off
+Pending interrupts:
+Interrupt handler timer, scheduled at 100Interrupt handler console read, scheduled at 100Interrupt handler network recv, scheduled at 100
+End of pending interrupts
+	interrupts: off -> on
+In Machine::Run(), return from OneTick == Tick 48 ==
+In Machine::Run(), into OneInstruction == Tick 48 ==
+Reading VA 324, size 4
+	Translate 324 , read
+phys addr = 324
+	value read = 65011720
+At PC = 324	JR r0,r31
+In Machine::Run(), return from OneInstruction  == Tick 48 ==
+In Machine::Run(), into OneTick == Tick 48 ==
+== Tick 49 ==
+	interrupts: on -> off
+Time: 49, interrupts off
+Pending interrupts:
+Interrupt handler timer, scheduled at 100Interrupt handler console read, scheduled at 100Interrupt handler network recv, scheduled at 100
+End of pending interrupts
+	interrupts: off -> on
+In Machine::Run(), return from OneTick == Tick 49 ==
+In Machine::Run(), into OneInstruction == Tick 49 ==
+Reading VA 328, size 4
+	Translate 328 , read
+phys addr = 328
+	value read = 0
+At PC = 328	SLL r0,r0,0
+In Machine::Run(), return from OneInstruction  == Tick 49 ==
+In Machine::Run(), into OneTick == Tick 49 ==
+== Tick 50 ==
+	interrupts: on -> off
+Time: 50, interrupts off
+Pending interrupts:
+Interrupt handler timer, scheduled at 100Interrupt handler console read, scheduled at 100Interrupt handler network recv, scheduled at 100
+End of pending interrupts
+	interrupts: off -> on
+In Machine::Run(), return from OneTick == Tick 50 ==
+In Machine::Run(), into OneInstruction == Tick 50 ==
+Reading VA 360, size 4
+	Translate 360 , read
+phys addr = 360
+	value read = 667025424
+At PC = 360	ADDIU r2,r30,16
+In Machine::Run(), return from OneInstruction  == Tick 50 ==
+In Machine::Run(), into OneTick == Tick 50 ==
+== Tick 51 ==
+	interrupts: on -> off
+Time: 51, interrupts off
+Pending interrupts:
+Interrupt handler timer, scheduled at 100Interrupt handler console read, scheduled at 100Interrupt handler network recv, scheduled at 100
+End of pending interrupts
+	interrupts: off -> on
+In Machine::Run(), return from OneTick == Tick 51 ==
+In Machine::Run(), into OneInstruction == Tick 51 ==
+Reading VA 364, size 4
+	Translate 364 , read
+phys addr = 364
+	value read = 667090960
+At PC = 364	ADDIU r3,r30,16
+In Machine::Run(), return from OneInstruction  == Tick 51 ==
+In Machine::Run(), into OneTick == Tick 51 ==
+== Tick 52 ==
+	interrupts: on -> off
+Time: 52, interrupts off
+Pending interrupts:
+Interrupt handler timer, scheduled at 100Interrupt handler console read, scheduled at 100Interrupt handler network recv, scheduled at 100
+End of pending interrupts
+	interrupts: off -> on
+In Machine::Run(), return from OneTick == Tick 52 ==
+In Machine::Run(), into OneInstruction == Tick 52 ==
+Reading VA 368, size 4
+	Translate 368 , read
+phys addr = 368
+	value read = 1006764032
+At PC = 368	LUI r2,0
+Executing: LUI r, 0
+In Machine::Run(), return from OneInstruction  == Tick 52 ==
+In Machine::Run(), into OneTick == Tick 52 ==
+== Tick 53 ==
+	interrupts: on -> off
+Time: 53, interrupts off
+Pending interrupts:
+Interrupt handler timer, scheduled at 100Interrupt handler console read, scheduled at 100Interrupt handler network recv, scheduled at 100
+End of pending interrupts
+	interrupts: off -> on
+In Machine::Run(), return from OneTick == Tick 53 ==
+In Machine::Run(), into OneInstruction == Tick 53 ==
+Reading VA 372, size 4
+	Translate 372 , read
+phys addr = 372
+	value read = 608305904
+At PC = 372	ADDIU r2,r2,752
+In Machine::Run(), return from OneInstruction  == Tick 53 ==
+In Machine::Run(), into OneTick == Tick 53 ==
+== Tick 54 ==
+	interrupts: on -> off
+Time: 54, interrupts off
+Pending interrupts:
+Interrupt handler timer, scheduled at 100Interrupt handler console read, scheduled at 100Interrupt handler network recv, scheduled at 100
+End of pending interrupts
+	interrupts: off -> on
+In Machine::Run(), return from OneTick == Tick 54 ==
+In Machine::Run(), into OneInstruction == Tick 54 ==
+Reading VA 376, size 4
+	Translate 376 , read
+phys addr = 376
+	value read = -2008809469
+At PC = 376	LWL r4,3(r2)
+Reading VA 752, size 4
+	Translate 752 , read
+phys addr = 752
+	value read = 1684234849
+In Machine::Run(), return from OneInstruction  == Tick 54 ==
+In Machine::Run(), into OneTick == Tick 54 ==
+== Tick 55 ==
+	interrupts: on -> off
+Time: 55, interrupts off
+Pending interrupts:
+Interrupt handler timer, scheduled at 100Interrupt handler console read, scheduled at 100Interrupt handler network recv, scheduled at 100
+End of pending interrupts
+	interrupts: off -> on
+In Machine::Run(), return from OneTick == Tick 55 ==
+In Machine::Run(), into OneInstruction == Tick 55 ==
+Reading VA 380, size 4
+	Translate 380 , read
+phys addr = 380
+	value read = -1740374016
+At PC = 380	LWR r4,0(r2)
+Reading VA 752, size 4
+	Translate 752 , read
+phys addr = 752
+	value read = 1684234849
+In Machine::Run(), return from OneInstruction  == Tick 55 ==
+In Machine::Run(), into OneTick == Tick 55 ==
+== Tick 56 ==
+	interrupts: on -> off
+Time: 56, interrupts off
+Pending interrupts:
+Interrupt handler timer, scheduled at 100Interrupt handler console read, scheduled at 100Interrupt handler network recv, scheduled at 100
+End of pending interrupts
+	interrupts: off -> on
+In Machine::Run(), return from OneTick == Tick 56 ==
+In Machine::Run(), into OneInstruction == Tick 56 ==
+Reading VA 384, size 4
+	Translate 384 , read
+phys addr = 384
+	value read = -2008743929
+At PC = 384	LWL r5,7(r2)
+Reading VA 756, size 4
+	Translate 756 , read
+phys addr = 756
+	value read = 1751606885
+In Machine::Run(), return from OneInstruction  == Tick 56 ==
+In Machine::Run(), into OneTick == Tick 56 ==
+== Tick 57 ==
+	interrupts: on -> off
+Time: 57, interrupts off
+Pending interrupts:
+Interrupt handler timer, scheduled at 100Interrupt handler console read, scheduled at 100Interrupt handler network recv, scheduled at 100
+End of pending interrupts
+	interrupts: off -> on
+In Machine::Run(), return from OneTick == Tick 57 ==
+In Machine::Run(), into OneInstruction == Tick 57 ==
+Reading VA 388, size 4
+	Translate 388 , read
+phys addr = 388
+	value read = -1740308476
+At PC = 388	LWR r5,4(r2)
+Reading VA 756, size 4
+	Translate 756 , read
+phys addr = 756
+	value read = 1751606885
+In Machine::Run(), return from OneInstruction  == Tick 57 ==
+In Machine::Run(), into OneTick == Tick 57 ==
+== Tick 58 ==
+	interrupts: on -> off
+Time: 58, interrupts off
+Pending interrupts:
+Interrupt handler timer, scheduled at 100Interrupt handler console read, scheduled at 100Interrupt handler network recv, scheduled at 100
+End of pending interrupts
+	interrupts: off -> on
+In Machine::Run(), return from OneTick == Tick 58 ==
+In Machine::Run(), into OneInstruction == Tick 58 ==
+Reading VA 392, size 4
+	Translate 392 , read
+phys addr = 392
+	value read = -2008678389
+At PC = 392	LWL r6,11(r2)
+Reading VA 760, size 4
+	Translate 760 , read
+phys addr = 760
+	value read = 1818978921
+In Machine::Run(), return from OneInstruction  == Tick 58 ==
+In Machine::Run(), into OneTick == Tick 58 ==
+== Tick 59 ==
+	interrupts: on -> off
+Time: 59, interrupts off
+Pending interrupts:
+Interrupt handler timer, scheduled at 100Interrupt handler console read, scheduled at 100Interrupt handler network recv, scheduled at 100
+End of pending interrupts
+	interrupts: off -> on
+In Machine::Run(), return from OneTick == Tick 59 ==
+In Machine::Run(), into OneInstruction == Tick 59 ==
+Reading VA 396, size 4
+	Translate 396 , read
+phys addr = 396
+	value read = -1740242936
+At PC = 396	LWR r6,8(r2)
+Reading VA 760, size 4
+	Translate 760 , read
+phys addr = 760
+	value read = 1818978921
+In Machine::Run(), return from OneInstruction  == Tick 59 ==
+In Machine::Run(), into OneTick == Tick 59 ==
+== Tick 60 ==
+	interrupts: on -> off
+Time: 60, interrupts off
+Pending interrupts:
+Interrupt handler timer, scheduled at 100Interrupt handler console read, scheduled at 100Interrupt handler network recv, scheduled at 100
+End of pending interrupts
+	interrupts: off -> on
+In Machine::Run(), return from OneTick == Tick 60 ==
+In Machine::Run(), into OneInstruction == Tick 60 ==
+Reading VA 400, size 4
+	Translate 400 , read
+phys addr = 400
+	value read = -2008612849
+At PC = 400	LWL r7,15(r2)
+Reading VA 764, size 4
+	Translate 764 , read
+phys addr = 764
+	value read = 1886350957
+In Machine::Run(), return from OneInstruction  == Tick 60 ==
+In Machine::Run(), into OneTick == Tick 60 ==
+== Tick 61 ==
+	interrupts: on -> off
+Time: 61, interrupts off
+Pending interrupts:
+Interrupt handler timer, scheduled at 100Interrupt handler console read, scheduled at 100Interrupt handler network recv, scheduled at 100
+End of pending interrupts
+	interrupts: off -> on
+In Machine::Run(), return from OneTick == Tick 61 ==
+In Machine::Run(), into OneInstruction == Tick 61 ==
+Reading VA 404, size 4
+	Translate 404 , read
+phys addr = 404
+	value read = -1740177396
+At PC = 404	LWR r7,12(r2)
+Reading VA 764, size 4
+	Translate 764 , read
+phys addr = 764
+	value read = 1886350957
+In Machine::Run(), return from OneInstruction  == Tick 61 ==
+In Machine::Run(), into OneTick == Tick 61 ==
+== Tick 62 ==
+	interrupts: on -> off
+Time: 62, interrupts off
+Pending interrupts:
+Interrupt handler timer, scheduled at 100Interrupt handler console read, scheduled at 100Interrupt handler network recv, scheduled at 100
+End of pending interrupts
+	interrupts: off -> on
+In Machine::Run(), return from OneTick == Tick 62 ==
+In Machine::Run(), into OneInstruction == Tick 62 ==
+Reading VA 408, size 4
+	Translate 408 , read
+phys addr = 408
+	value read = -1469841405
+At PC = 408	SWL r4,3(r3)
+Reading VA 1816, size 4
+	Translate 1816 , read
+phys addr = 1816
+	value read = 0
+Writing VA 1816, size 4, value 1684234849
+	Translate 1816 , write
+phys addr = 1816
+In Machine::Run(), return from OneInstruction  == Tick 62 ==
+In Machine::Run(), into OneTick == Tick 62 ==
+== Tick 63 ==
+	interrupts: on -> off
+Time: 63, interrupts off
+Pending interrupts:
+Interrupt handler timer, scheduled at 100Interrupt handler console read, scheduled at 100Interrupt handler network recv, scheduled at 100
+End of pending interrupts
+	interrupts: off -> on
+In Machine::Run(), return from OneTick == Tick 63 ==
+In Machine::Run(), into OneInstruction == Tick 63 ==
+Reading VA 412, size 4
+	Translate 412 , read
+phys addr = 412
+	value read = -1201405952
+At PC = 412	SWR r4,0(r3)
+Reading VA 1816, size 4
+	Translate 1816 , read
+phys addr = 1816
+	value read = 1684234849
+Writing VA 1816, size 4, value 1684234849
+	Translate 1816 , write
+phys addr = 1816
+In Machine::Run(), return from OneInstruction  == Tick 63 ==
+In Machine::Run(), into OneTick == Tick 63 ==
+== Tick 64 ==
+	interrupts: on -> off
+Time: 64, interrupts off
+Pending interrupts:
+Interrupt handler timer, scheduled at 100Interrupt handler console read, scheduled at 100Interrupt handler network recv, scheduled at 100
+End of pending interrupts
+	interrupts: off -> on
+In Machine::Run(), return from OneTick == Tick 64 ==
+In Machine::Run(), into OneInstruction == Tick 64 ==
+Reading VA 416, size 4
+	Translate 416 , read
+phys addr = 416
+	value read = -1469775865
+At PC = 416	SWL r5,7(r3)
+Reading VA 1820, size 4
+	Translate 1820 , read
+phys addr = 1820
+	value read = 0
+Writing VA 1820, size 4, value 1751606885
+	Translate 1820 , write
+phys addr = 1820
+In Machine::Run(), return from OneInstruction  == Tick 64 ==
+In Machine::Run(), into OneTick == Tick 64 ==
+== Tick 65 ==
+	interrupts: on -> off
+Time: 65, interrupts off
+Pending interrupts:
+Interrupt handler timer, scheduled at 100Interrupt handler console read, scheduled at 100Interrupt handler network recv, scheduled at 100
+End of pending interrupts
+	interrupts: off -> on
+In Machine::Run(), return from OneTick == Tick 65 ==
+In Machine::Run(), into OneInstruction == Tick 65 ==
+Reading VA 420, size 4
+	Translate 420 , read
+phys addr = 420
+	value read = -1201340412
+At PC = 420	SWR r5,4(r3)
+Reading VA 1820, size 4
+	Translate 1820 , read
+phys addr = 1820
+	value read = 1751606885
+Writing VA 1820, size 4, value 1751606885
+	Translate 1820 , write
+phys addr = 1820
+In Machine::Run(), return from OneInstruction  == Tick 65 ==
+In Machine::Run(), into OneTick == Tick 65 ==
+== Tick 66 ==
+	interrupts: on -> off
+Time: 66, interrupts off
+Pending interrupts:
+Interrupt handler timer, scheduled at 100Interrupt handler console read, scheduled at 100Interrupt handler network recv, scheduled at 100
+End of pending interrupts
+	interrupts: off -> on
+In Machine::Run(), return from OneTick == Tick 66 ==
+In Machine::Run(), into OneInstruction == Tick 66 ==
+Reading VA 424, size 4
+	Translate 424 , read
+phys addr = 424
+	value read = -1469710325
+At PC = 424	SWL r6,11(r3)
+Reading VA 1824, size 4
+	Translate 1824 , read
+phys addr = 1824
+	value read = 0
+Writing VA 1824, size 4, value 1818978921
+	Translate 1824 , write
+phys addr = 1824
+In Machine::Run(), return from OneInstruction  == Tick 66 ==
+In Machine::Run(), into OneTick == Tick 66 ==
+== Tick 67 ==
+	interrupts: on -> off
+Time: 67, interrupts off
+Pending interrupts:
+Interrupt handler timer, scheduled at 100Interrupt handler console read, scheduled at 100Interrupt handler network recv, scheduled at 100
+End of pending interrupts
+	interrupts: off -> on
+In Machine::Run(), return from OneTick == Tick 67 ==
+In Machine::Run(), into OneInstruction == Tick 67 ==
+Reading VA 428, size 4
+	Translate 428 , read
+phys addr = 428
+	value read = -1201274872
+At PC = 428	SWR r6,8(r3)
+Reading VA 1824, size 4
+	Translate 1824 , read
+phys addr = 1824
+	value read = 1818978921
+Writing VA 1824, size 4, value 1818978921
+	Translate 1824 , write
+phys addr = 1824
+In Machine::Run(), return from OneInstruction  == Tick 67 ==
+In Machine::Run(), into OneTick == Tick 67 ==
+== Tick 68 ==
+	interrupts: on -> off
+Time: 68, interrupts off
+Pending interrupts:
+Interrupt handler timer, scheduled at 100Interrupt handler console read, scheduled at 100Interrupt handler network recv, scheduled at 100
+End of pending interrupts
+	interrupts: off -> on
+In Machine::Run(), return from OneTick == Tick 68 ==
+In Machine::Run(), into OneInstruction == Tick 68 ==
+Reading VA 432, size 4
+	Translate 432 , read
+phys addr = 432
+	value read = -1469644785
+At PC = 432	SWL r7,15(r3)
+Reading VA 1828, size 4
+	Translate 1828 , read
+phys addr = 1828
+	value read = 0
+Writing VA 1828, size 4, value 1886350957
+	Translate 1828 , write
+phys addr = 1828
+In Machine::Run(), return from OneInstruction  == Tick 68 ==
+In Machine::Run(), into OneTick == Tick 68 ==
+== Tick 69 ==
+	interrupts: on -> off
+Time: 69, interrupts off
+Pending interrupts:
+Interrupt handler timer, scheduled at 100Interrupt handler console read, scheduled at 100Interrupt handler network recv, scheduled at 100
+End of pending interrupts
+	interrupts: off -> on
+In Machine::Run(), return from OneTick == Tick 69 ==
+In Machine::Run(), into OneInstruction == Tick 69 ==
+Reading VA 436, size 4
+	Translate 436 , read
+phys addr = 436
+	value read = -1201209332
+At PC = 436	SWR r7,12(r3)
+Reading VA 1828, size 4
+	Translate 1828 , read
+phys addr = 1828
+	value read = 1886350957
+Writing VA 1828, size 4, value 1886350957
+	Translate 1828 , write
+phys addr = 1828
+In Machine::Run(), return from OneInstruction  == Tick 69 ==
+In Machine::Run(), into OneTick == Tick 69 ==
+== Tick 70 ==
+	interrupts: on -> off
+Time: 70, interrupts off
+Pending interrupts:
+Interrupt handler timer, scheduled at 100Interrupt handler console read, scheduled at 100Interrupt handler network recv, scheduled at 100
+End of pending interrupts
+	interrupts: off -> on
+In Machine::Run(), return from OneTick == Tick 70 ==
+In Machine::Run(), into OneInstruction == Tick 70 ==
+Reading VA 440, size 4
+	Translate 440 , read
+phys addr = 440
+	value read = -2008809453
+At PC = 440	LWL r4,19(r2)
+Reading VA 768, size 4
+	Translate 768 , read
+phys addr = 768
+	value read = 1953722993
+In Machine::Run(), return from OneInstruction  == Tick 70 ==
+In Machine::Run(), into OneTick == Tick 70 ==
+== Tick 71 ==
+	interrupts: on -> off
+Time: 71, interrupts off
+Pending interrupts:
+Interrupt handler timer, scheduled at 100Interrupt handler console read, scheduled at 100Interrupt handler network recv, scheduled at 100
+End of pending interrupts
+	interrupts: off -> on
+In Machine::Run(), return from OneTick == Tick 71 ==
+In Machine::Run(), into OneInstruction == Tick 71 ==
+Reading VA 444, size 4
+	Translate 444 , read
+phys addr = 444
+	value read = -1740374000
+At PC = 444	LWR r4,16(r2)
+Reading VA 768, size 4
+	Translate 768 , read
+phys addr = 768
+	value read = 1953722993
+In Machine::Run(), return from OneInstruction  == Tick 71 ==
+In Machine::Run(), into OneTick == Tick 71 ==
+== Tick 72 ==
+	interrupts: on -> off
+Time: 72, interrupts off
+Pending interrupts:
+Interrupt handler timer, scheduled at 100Interrupt handler console read, scheduled at 100Interrupt handler network recv, scheduled at 100
+End of pending interrupts
+	interrupts: off -> on
+In Machine::Run(), return from OneTick == Tick 72 ==
+In Machine::Run(), into OneInstruction == Tick 72 ==
+Reading VA 448, size 4
+	Translate 448 , read
+phys addr = 448
+	value read = -2008743913
+At PC = 448	LWL r5,23(r2)
+Reading VA 772, size 4
+	Translate 772 , read
+phys addr = 772
+	value read = 2021095029
+In Machine::Run(), return from OneInstruction  == Tick 72 ==
+In Machine::Run(), into OneTick == Tick 72 ==
+== Tick 73 ==
+	interrupts: on -> off
+Time: 73, interrupts off
+Pending interrupts:
+Interrupt handler timer, scheduled at 100Interrupt handler console read, scheduled at 100Interrupt handler network recv, scheduled at 100
+End of pending interrupts
+	interrupts: off -> on
+In Machine::Run(), return from OneTick == Tick 73 ==
+In Machine::Run(), into OneInstruction == Tick 73 ==
+Reading VA 452, size 4
+	Translate 452 , read
+phys addr = 452
+	value read = -1740308460
+At PC = 452	LWR r5,20(r2)
+Reading VA 772, size 4
+	Translate 772 , read
+phys addr = 772
+	value read = 2021095029
+In Machine::Run(), return from OneInstruction  == Tick 73 ==
+In Machine::Run(), into OneTick == Tick 73 ==
+== Tick 74 ==
+	interrupts: on -> off
+Time: 74, interrupts off
+Pending interrupts:
+Interrupt handler timer, scheduled at 100Interrupt handler console read, scheduled at 100Interrupt handler network recv, scheduled at 100
+End of pending interrupts
+	interrupts: off -> on
+In Machine::Run(), return from OneTick == Tick 74 ==
+In Machine::Run(), into OneInstruction == Tick 74 ==
+Reading VA 456, size 4
+	Translate 456 , read
+phys addr = 456
+	value read = -2142896104
+At PC = 456	LB r6,24(r2)
+Reading VA 776, size 1
+	Translate 776 , read
+phys addr = 776
+	value read = 121
+In Machine::Run(), return from OneInstruction  == Tick 74 ==
+In Machine::Run(), into OneTick == Tick 74 ==
+== Tick 75 ==
+	interrupts: on -> off
+Time: 75, interrupts off
+Pending interrupts:
+Interrupt handler timer, scheduled at 100Interrupt handler console read, scheduled at 100Interrupt handler network recv, scheduled at 100
+End of pending interrupts
+	interrupts: off -> on
+In Machine::Run(), return from OneTick == Tick 75 ==
+In Machine::Run(), into OneInstruction == Tick 75 ==
+Reading VA 460, size 4
+	Translate 460 , read
+phys addr = 460
+	value read = -2142830567
+At PC = 460	LB r7,25(r2)
+Reading VA 777, size 1
+	Translate 777 , read
+phys addr = 777
+	value read = 122
+In Machine::Run(), return from OneInstruction  == Tick 75 ==
+In Machine::Run(), into OneTick == Tick 75 ==
+== Tick 76 ==
+	interrupts: on -> off
+Time: 76, interrupts off
+Pending interrupts:
+Interrupt handler timer, scheduled at 100Interrupt handler console read, scheduled at 100Interrupt handler network recv, scheduled at 100
+End of pending interrupts
+	interrupts: off -> on
+In Machine::Run(), return from OneTick == Tick 76 ==
+In Machine::Run(), into OneInstruction == Tick 76 ==
+Reading VA 464, size 4
+	Translate 464 , read
+phys addr = 464
+	value read = -1469841389
+At PC = 464	SWL r4,19(r3)
+Reading VA 1832, size 4
+	Translate 1832 , read
+phys addr = 1832
+	value read = 0
+Writing VA 1832, size 4, value 1953722993
+	Translate 1832 , write
+phys addr = 1832
+In Machine::Run(), return from OneInstruction  == Tick 76 ==
+In Machine::Run(), into OneTick == Tick 76 ==
+== Tick 77 ==
+	interrupts: on -> off
+Time: 77, interrupts off
+Pending interrupts:
+Interrupt handler timer, scheduled at 100Interrupt handler console read, scheduled at 100Interrupt handler network recv, scheduled at 100
+End of pending interrupts
+	interrupts: off -> on
+In Machine::Run(), return from OneTick == Tick 77 ==
+In Machine::Run(), into OneInstruction == Tick 77 ==
+Reading VA 468, size 4
+	Translate 468 , read
+phys addr = 468
+	value read = -1201405936
+At PC = 468	SWR r4,16(r3)
+Reading VA 1832, size 4
+	Translate 1832 , read
+phys addr = 1832
+	value read = 1953722993
+Writing VA 1832, size 4, value 1953722993
+	Translate 1832 , write
+phys addr = 1832
+In Machine::Run(), return from OneInstruction  == Tick 77 ==
+In Machine::Run(), into OneTick == Tick 77 ==
+== Tick 78 ==
+	interrupts: on -> off
+Time: 78, interrupts off
+Pending interrupts:
+Interrupt handler timer, scheduled at 100Interrupt handler console read, scheduled at 100Interrupt handler network recv, scheduled at 100
+End of pending interrupts
+	interrupts: off -> on
+In Machine::Run(), return from OneTick == Tick 78 ==
+In Machine::Run(), into OneInstruction == Tick 78 ==
+Reading VA 472, size 4
+	Translate 472 , read
+phys addr = 472
+	value read = -1469775849
+At PC = 472	SWL r5,23(r3)
+Reading VA 1836, size 4
+	Translate 1836 , read
+phys addr = 1836
+	value read = 0
+Writing VA 1836, size 4, value 2021095029
+	Translate 1836 , write
+phys addr = 1836
+In Machine::Run(), return from OneInstruction  == Tick 78 ==
+In Machine::Run(), into OneTick == Tick 78 ==
+== Tick 79 ==
+	interrupts: on -> off
+Time: 79, interrupts off
+Pending interrupts:
+Interrupt handler timer, scheduled at 100Interrupt handler console read, scheduled at 100Interrupt handler network recv, scheduled at 100
+End of pending interrupts
+	interrupts: off -> on
+In Machine::Run(), return from OneTick == Tick 79 ==
+In Machine::Run(), into OneInstruction == Tick 79 ==
+Reading VA 476, size 4
+	Translate 476 , read
+phys addr = 476
+	value read = -1201340396
+At PC = 476	SWR r5,20(r3)
+Reading VA 1836, size 4
+	Translate 1836 , read
+phys addr = 1836
+	value read = 2021095029
+Writing VA 1836, size 4, value 2021095029
+	Translate 1836 , write
+phys addr = 1836
+In Machine::Run(), return from OneInstruction  == Tick 79 ==
+In Machine::Run(), into OneTick == Tick 79 ==
+== Tick 80 ==
+	interrupts: on -> off
+Time: 80, interrupts off
+Pending interrupts:
+Interrupt handler timer, scheduled at 100Interrupt handler console read, scheduled at 100Interrupt handler network recv, scheduled at 100
+End of pending interrupts
+	interrupts: off -> on
+In Machine::Run(), return from OneTick == Tick 80 ==
+In Machine::Run(), into OneInstruction == Tick 80 ==
+Reading VA 480, size 4
+	Translate 480 , read
+phys addr = 480
+	value read = -1603928040
+At PC = 480	SB r6,24(r3)
+Writing VA 1840, size 1, value 121
+	Translate 1840 , write
+phys addr = 1840
+In Machine::Run(), return from OneInstruction  == Tick 80 ==
+In Machine::Run(), into OneTick == Tick 80 ==
+== Tick 81 ==
+	interrupts: on -> off
+Time: 81, interrupts off
+Pending interrupts:
+Interrupt handler timer, scheduled at 100Interrupt handler console read, scheduled at 100Interrupt handler network recv, scheduled at 100
+End of pending interrupts
+	interrupts: off -> on
+In Machine::Run(), return from OneTick == Tick 81 ==
+In Machine::Run(), into OneInstruction == Tick 81 ==
+Reading VA 484, size 4
+	Translate 484 , read
+phys addr = 484
+	value read = -1603862503
+At PC = 484	SB r7,25(r3)
+Writing VA 1841, size 1, value 122
+	Translate 1841 , write
+phys addr = 1841
+In Machine::Run(), return from OneInstruction  == Tick 81 ==
+In Machine::Run(), into OneTick == Tick 81 ==
+== Tick 82 ==
+	interrupts: on -> off
+Time: 82, interrupts off
+Pending interrupts:
+Interrupt handler timer, scheduled at 100Interrupt handler console read, scheduled at 100Interrupt handler network recv, scheduled at 100
+End of pending interrupts
+	interrupts: off -> on
+In Machine::Run(), return from OneTick == Tick 82 ==
+In Machine::Run(), into OneInstruction == Tick 82 ==
+Reading VA 488, size 4
+	Translate 488 , read
+phys addr = 488
+	value read = -2143027174
+At PC = 488	LB r4,26(r2)
+Reading VA 778, size 1
+	Translate 778 , read
+phys addr = 778
+	value read = 0
+In Machine::Run(), return from OneInstruction  == Tick 82 ==
+In Machine::Run(), into OneTick == Tick 82 ==
+== Tick 83 ==
+	interrupts: on -> off
+Time: 83, interrupts off
+Pending interrupts:
+Interrupt handler timer, scheduled at 100Interrupt handler console read, scheduled at 100Interrupt handler network recv, scheduled at 100
+End of pending interrupts
+	interrupts: off -> on
+In Machine::Run(), return from OneTick == Tick 83 ==
+In Machine::Run(), into OneInstruction == Tick 83 ==
+Reading VA 492, size 4
+	Translate 492 , read
+phys addr = 492
+	value read = 0
+At PC = 492	SLL r0,r0,0
+In Machine::Run(), return from OneInstruction  == Tick 83 ==
+In Machine::Run(), into OneTick == Tick 83 ==
+== Tick 84 ==
+	interrupts: on -> off
+Time: 84, interrupts off
+Pending interrupts:
+Interrupt handler timer, scheduled at 100Interrupt handler console read, scheduled at 100Interrupt handler network recv, scheduled at 100
+End of pending interrupts
+	interrupts: off -> on
+In Machine::Run(), return from OneTick == Tick 84 ==
+In Machine::Run(), into OneInstruction == Tick 84 ==
+Reading VA 496, size 4
+	Translate 496 , read
+phys addr = 496
+	value read = -1604059110
+At PC = 496	SB r4,26(r3)
+Writing VA 1842, size 1, value 0
+	Translate 1842 , write
+phys addr = 1842
+In Machine::Run(), return from OneInstruction  == Tick 84 ==
+In Machine::Run(), into OneTick == Tick 84 ==
+== Tick 85 ==
+	interrupts: on -> off
+Time: 85, interrupts off
+Pending interrupts:
+Interrupt handler timer, scheduled at 100Interrupt handler console read, scheduled at 100Interrupt handler network recv, scheduled at 100
+End of pending interrupts
+	interrupts: off -> on
+In Machine::Run(), return from OneTick == Tick 85 ==
+In Machine::Run(), into OneInstruction == Tick 85 ==
+Reading VA 500, size 4
+	Translate 500 , read
+phys addr = 500
+	value read = 1006895104
+At PC = 500	LUI r4,0
+Executing: LUI r, 0
+In Machine::Run(), return from OneInstruction  == Tick 85 ==
+In Machine::Run(), into OneTick == Tick 85 ==
+== Tick 86 ==
+	interrupts: on -> off
+Time: 86, interrupts off
+Pending interrupts:
+Interrupt handler timer, scheduled at 100Interrupt handler console read, scheduled at 100Interrupt handler network recv, scheduled at 100
+End of pending interrupts
+	interrupts: off -> on
+In Machine::Run(), return from OneTick == Tick 86 ==
+In Machine::Run(), into OneInstruction == Tick 86 ==
+Reading VA 504, size 4
+	Translate 504 , read
+phys addr = 504
+	value read = 612631308
+At PC = 504	ADDIU r4,r4,780
+In Machine::Run(), return from OneInstruction  == Tick 86 ==
+In Machine::Run(), into OneTick == Tick 86 ==
+== Tick 87 ==
+	interrupts: on -> off
+Time: 87, interrupts off
+Pending interrupts:
+Interrupt handler timer, scheduled at 100Interrupt handler console read, scheduled at 100Interrupt handler network recv, scheduled at 100
+End of pending interrupts
+	interrupts: off -> on
+In Machine::Run(), return from OneTick == Tick 87 ==
+In Machine::Run(), into OneInstruction == Tick 87 ==
+Reading VA 508, size 4
+	Translate 508 , read
+phys addr = 508
+	value read = 201326629
+At PC = 508	JAL 37
+In Machine::Run(), return from OneInstruction  == Tick 87 ==
+In Machine::Run(), into OneTick == Tick 87 ==
+== Tick 88 ==
+	interrupts: on -> off
+Time: 88, interrupts off
+Pending interrupts:
+Interrupt handler timer, scheduled at 100Interrupt handler console read, scheduled at 100Interrupt handler network recv, scheduled at 100
+End of pending interrupts
+	interrupts: off -> on
+In Machine::Run(), return from OneTick == Tick 88 ==
+In Machine::Run(), into OneInstruction == Tick 88 ==
+Reading VA 512, size 4
+	Translate 512 , read
+phys addr = 512
+	value read = 0
+At PC = 512	SLL r0,r0,0
+In Machine::Run(), return from OneInstruction  == Tick 88 ==
+In Machine::Run(), into OneTick == Tick 88 ==
+== Tick 89 ==
+	interrupts: on -> off
+Time: 89, interrupts off
+Pending interrupts:
+Interrupt handler timer, scheduled at 100Interrupt handler console read, scheduled at 100Interrupt handler network recv, scheduled at 100
+End of pending interrupts
+	interrupts: off -> on
+In Machine::Run(), return from OneTick == Tick 89 ==
+In Machine::Run(), into OneInstruction == Tick 89 ==
+Reading VA 148, size 4
+	Translate 148 , read
+phys addr = 148
+	value read = 604110852
+At PC = 148	ADDIU r2,r0,4
+In Machine::Run(), return from OneInstruction  == Tick 89 ==
+In Machine::Run(), into OneTick == Tick 89 ==
+== Tick 90 ==
+	interrupts: on -> off
+Time: 90, interrupts off
+Pending interrupts:
+Interrupt handler timer, scheduled at 100Interrupt handler console read, scheduled at 100Interrupt handler network recv, scheduled at 100
+End of pending interrupts
+	interrupts: off -> on
+In Machine::Run(), return from OneTick == Tick 90 ==
+In Machine::Run(), into OneInstruction == Tick 90 ==
+Reading VA 152, size 4
+	Translate 152 , read
+phys addr = 152
+	value read = 12
+At PC = 152	SYSCALL
+In Machine::OneInstruction, RaiseException(SyscallException, 0), 90
+Exception: syscall
+Received Exception 1 type: 4
+
+In ExceptionHandler(), Received Exception 1 type: 4, 90
+In Machine::Run(), return from OneInstruction  == Tick 90 ==
+In Machine::Run(), into OneTick == Tick 90 ==
+== Tick 91 ==
+	interrupts: on -> off
+Time: 91, interrupts off
+Pending interrupts:
+Interrupt handler timer, scheduled at 100Interrupt handler console read, scheduled at 100Interrupt handler network recv, scheduled at 100
+End of pending interrupts
+	interrupts: off -> on
+In Machine::Run(), return from OneTick == Tick 91 ==
+In Machine::Run(), into OneInstruction == Tick 91 ==
+Reading VA 156, size 4
+	Translate 156 , read
+phys addr = 156
+	value read = 65011720
+At PC = 156	JR r0,r31
+In Machine::Run(), return from OneInstruction  == Tick 91 ==
+In Machine::Run(), into OneTick == Tick 91 ==
+== Tick 92 ==
+	interrupts: on -> off
+Time: 92, interrupts off
+Pending interrupts:
+Interrupt handler timer, scheduled at 100Interrupt handler console read, scheduled at 100Interrupt handler network recv, scheduled at 100
+End of pending interrupts
+	interrupts: off -> on
+In Machine::Run(), return from OneTick == Tick 92 ==
+In Machine::Run(), into OneInstruction == Tick 92 ==
+Reading VA 160, size 4
+	Translate 160 , read
+phys addr = 160
+	value read = 0
+At PC = 160	SLL r0,r0,0
+In Machine::Run(), return from OneInstruction  == Tick 92 ==
+In Machine::Run(), into OneTick == Tick 92 ==
+== Tick 93 ==
+	interrupts: on -> off
+Time: 93, interrupts off
+Pending interrupts:
+Interrupt handler timer, scheduled at 100Interrupt handler console read, scheduled at 100Interrupt handler network recv, scheduled at 100
+End of pending interrupts
+	interrupts: off -> on
+In Machine::Run(), return from OneTick == Tick 93 ==
+In Machine::Run(), into OneInstruction == Tick 93 ==
+Reading VA 516, size 4
+	Translate 516 , read
+phys addr = 516
+	value read = -1346240432
+At PC = 516	SW r2,80(r30)
+Writing VA 1880, size 4, value 1
+	Translate 1880 , write
+phys addr = 1880
+In Machine::Run(), return from OneInstruction  == Tick 93 ==
+In Machine::Run(), into OneTick == Tick 93 ==
+== Tick 94 ==
+	interrupts: on -> off
+Time: 94, interrupts off
+Pending interrupts:
+Interrupt handler timer, scheduled at 100Interrupt handler console read, scheduled at 100Interrupt handler network recv, scheduled at 100
+End of pending interrupts
+	interrupts: off -> on
+In Machine::Run(), return from OneTick == Tick 94 ==
+In Machine::Run(), into OneInstruction == Tick 94 ==
+Reading VA 520, size 4
+	Translate 520 , read
+phys addr = 520
+	value read = 1006895104
+At PC = 520	LUI r4,0
+Executing: LUI r, 0
+In Machine::Run(), return from OneInstruction  == Tick 94 ==
+In Machine::Run(), into OneTick == Tick 94 ==
+== Tick 95 ==
+	interrupts: on -> off
+Time: 95, interrupts off
+Pending interrupts:
+Interrupt handler timer, scheduled at 100Interrupt handler console read, scheduled at 100Interrupt handler network recv, scheduled at 100
+End of pending interrupts
+	interrupts: off -> on
+In Machine::Run(), return from OneTick == Tick 95 ==
+In Machine::Run(), into OneInstruction == Tick 95 ==
+Reading VA 524, size 4
+	Translate 524 , read
+phys addr = 524
+	value read = 612631308
+At PC = 524	ADDIU r4,r4,780
+In Machine::Run(), return from OneInstruction  == Tick 95 ==
+In Machine::Run(), into OneTick == Tick 95 ==
+== Tick 96 ==
+	interrupts: on -> off
+Time: 96, interrupts off
+Pending interrupts:
+Interrupt handler timer, scheduled at 100Interrupt handler console read, scheduled at 100Interrupt handler network recv, scheduled at 100
+End of pending interrupts
+	interrupts: off -> on
+In Machine::Run(), return from OneTick == Tick 96 ==
+In Machine::Run(), into OneInstruction == Tick 96 ==
+Reading VA 528, size 4
+	Translate 528 , read
+phys addr = 528
+	value read = 201326657
+At PC = 528	JAL 65
+In Machine::Run(), return from OneInstruction  == Tick 96 ==
+In Machine::Run(), into OneTick == Tick 96 ==
+== Tick 97 ==
+	interrupts: on -> off
+Time: 97, interrupts off
+Pending interrupts:
+Interrupt handler timer, scheduled at 100Interrupt handler console read, scheduled at 100Interrupt handler network recv, scheduled at 100
+End of pending interrupts
+	interrupts: off -> on
+In Machine::Run(), return from OneTick == Tick 97 ==
+In Machine::Run(), into OneInstruction == Tick 97 ==
+Reading VA 532, size 4
+	Translate 532 , read
+phys addr = 532
+	value read = 0
+At PC = 532	SLL r0,r0,0
+In Machine::Run(), return from OneInstruction  == Tick 97 ==
+In Machine::Run(), into OneTick == Tick 97 ==
+== Tick 98 ==
+	interrupts: on -> off
+Time: 98, interrupts off
+Pending interrupts:
+Interrupt handler timer, scheduled at 100Interrupt handler console read, scheduled at 100Interrupt handler network recv, scheduled at 100
+End of pending interrupts
+	interrupts: off -> on
+In Machine::Run(), return from OneTick == Tick 98 ==
+In Machine::Run(), into OneInstruction == Tick 98 ==
+Reading VA 260, size 4
+	Translate 260 , read
+phys addr = 260
+	value read = 604110854
+At PC = 260	ADDIU r2,r0,6
+In Machine::Run(), return from OneInstruction  == Tick 98 ==
+In Machine::Run(), into OneTick == Tick 98 ==
+== Tick 99 ==
+	interrupts: on -> off
+Time: 99, interrupts off
+Pending interrupts:
+Interrupt handler timer, scheduled at 100Interrupt handler console read, scheduled at 100Interrupt handler network recv, scheduled at 100
+End of pending interrupts
+	interrupts: off -> on
+In Machine::Run(), return from OneTick == Tick 99 ==
+In Machine::Run(), into OneInstruction == Tick 99 ==
+Reading VA 264, size 4
+	Translate 264 , read
+phys addr = 264
+	value read = 12
+At PC = 264	SYSCALL
+In Machine::OneInstruction, RaiseException(SyscallException, 0), 99
+Exception: syscall
+Received Exception 1 type: 6
+
+In ExceptionHandler(), Received Exception 1 type: 6, 99
+Open
+
+In ExceptionHandler(), into SysOpen, 99
+In ExceptionHandler(), return from SysOpen, 99 return value: 0
+In Machine::Run(), return from OneInstruction  == Tick 99 ==
+In Machine::Run(), into OneTick == Tick 99 ==
+== Tick 100 ==
+	interrupts: on -> off
+Time: 100, interrupts off
+Pending interrupts:
+Interrupt handler timer, scheduled at 100Interrupt handler console read, scheduled at 100Interrupt handler network recv, scheduled at 100
+End of pending interrupts
+Invoking interrupt handler for the 
+timer at time 100
+In Interrupt::CheckIfDue, into callOnInterrupt->CallBack, 100
+Scheduling interrupt handler the timer at time = 200
+In Interrupt::CheckIfDue, return from callOnInterrupt->CallBack, 100
+In Interrupt::CheckIfDue, into callOnInterrupt->CallBack, 100
+Scheduling interrupt handler the console read at time = 200
+In Interrupt::CheckIfDue, return from callOnInterrupt->CallBack, 100
+In Interrupt::CheckIfDue, into callOnInterrupt->CallBack, 100
+Scheduling interrupt handler the network recv at time = 200
+In Interrupt::CheckIfDue, return from callOnInterrupt->CallBack, 100
+	interrupts: off -> on
+	interrupts: on -> off
+Yielding thread: fileIO_test2
+	interrupts: off -> on
+== Tick 110 ==
+	interrupts: on -> off
+Time: 110, interrupts off
+Pending interrupts:
+Interrupt handler timer, scheduled at 200Interrupt handler console read, scheduled at 200Interrupt handler network recv, scheduled at 200
+End of pending interrupts
+	interrupts: off -> on
+In Machine::Run(), return from OneTick == Tick 110 ==
+In Machine::Run(), into OneInstruction == Tick 110 ==
+Reading VA 268, size 4
+	Translate 268 , read
+phys addr = 268
+	value read = 65011720
+At PC = 268	JR r0,r31
+In Machine::Run(), return from OneInstruction  == Tick 110 ==
+In Machine::Run(), into OneTick == Tick 110 ==
+== Tick 111 ==
+	interrupts: on -> off
+Time: 111, interrupts off
+Pending interrupts:
+Interrupt handler timer, scheduled at 200Interrupt handler console read, scheduled at 200Interrupt handler network recv, scheduled at 200
+End of pending interrupts
+	interrupts: off -> on
+In Machine::Run(), return from OneTick == Tick 111 ==
+In Machine::Run(), into OneInstruction == Tick 111 ==
+Reading VA 272, size 4
+	Translate 272 , read
+phys addr = 272
+	value read = 0
+At PC = 272	SLL r0,r0,0
+In Machine::Run(), return from OneInstruction  == Tick 111 ==
+In Machine::Run(), into OneTick == Tick 111 ==
+== Tick 112 ==
+	interrupts: on -> off
+Time: 112, interrupts off
+Pending interrupts:
+Interrupt handler timer, scheduled at 200Interrupt handler console read, scheduled at 200Interrupt handler network recv, scheduled at 200
+End of pending interrupts
+	interrupts: off -> on
+In Machine::Run(), return from OneTick == Tick 112 ==
+In Machine::Run(), into OneInstruction == Tick 112 ==
+Reading VA 536, size 4
+	Translate 536 , read
+phys addr = 536
+	value read = -1346240428
+At PC = 536	SW r2,84(r30)
+Writing VA 1884, size 4, value 0
+	Translate 1884 , write
+phys addr = 1884
+In Machine::Run(), return from OneInstruction  == Tick 112 ==
+In Machine::Run(), into OneTick == Tick 112 ==
+== Tick 113 ==
+	interrupts: on -> off
+Time: 113, interrupts off
+Pending interrupts:
+Interrupt handler timer, scheduled at 200Interrupt handler console read, scheduled at 200Interrupt handler network recv, scheduled at 200
+End of pending interrupts
+	interrupts: off -> on
+In Machine::Run(), return from OneTick == Tick 113 ==
+In Machine::Run(), into OneInstruction == Tick 113 ==
+Reading VA 540, size 4
+	Translate 540 , read
+phys addr = 540
+	value read = 1006895104
+At PC = 540	LUI r4,0
+Executing: LUI r, 0
+In Machine::Run(), return from OneInstruction  == Tick 113 ==
+In Machine::Run(), into OneTick == Tick 113 ==
+== Tick 114 ==
+	interrupts: on -> off
+Time: 114, interrupts off
+Pending interrupts:
+Interrupt handler timer, scheduled at 200Interrupt handler console read, scheduled at 200Interrupt handler network recv, scheduled at 200
+End of pending interrupts
+	interrupts: off -> on
+In Machine::Run(), return from OneTick == Tick 114 ==
+In Machine::Run(), into OneInstruction == Tick 114 ==
+Reading VA 544, size 4
+	Translate 544 , read
+phys addr = 544
+	value read = 612631308
+At PC = 544	ADDIU r4,r4,780
+In Machine::Run(), return from OneInstruction  == Tick 114 ==
+In Machine::Run(), into OneTick == Tick 114 ==
+== Tick 115 ==
+	interrupts: on -> off
+Time: 115, interrupts off
+Pending interrupts:
+Interrupt handler timer, scheduled at 200Interrupt handler console read, scheduled at 200Interrupt handler network recv, scheduled at 200
+End of pending interrupts
+	interrupts: off -> on
+In Machine::Run(), return from OneTick == Tick 115 ==
+In Machine::Run(), into OneInstruction == Tick 115 ==
+Reading VA 548, size 4
+	Translate 548 , read
+phys addr = 548
+	value read = 201326657
+At PC = 548	JAL 65
+In Machine::Run(), return from OneInstruction  == Tick 115 ==
+In Machine::Run(), into OneTick == Tick 115 ==
+== Tick 116 ==
+	interrupts: on -> off
+Time: 116, interrupts off
+Pending interrupts:
+Interrupt handler timer, scheduled at 200Interrupt handler console read, scheduled at 200Interrupt handler network recv, scheduled at 200
+End of pending interrupts
+	interrupts: off -> on
+In Machine::Run(), return from OneTick == Tick 116 ==
+In Machine::Run(), into OneInstruction == Tick 116 ==
+Reading VA 552, size 4
+	Translate 552 , read
+phys addr = 552
+	value read = 0
+At PC = 552	SLL r0,r0,0
+In Machine::Run(), return from OneInstruction  == Tick 116 ==
+In Machine::Run(), into OneTick == Tick 116 ==
+== Tick 117 ==
+	interrupts: on -> off
+Time: 117, interrupts off
+Pending interrupts:
+Interrupt handler timer, scheduled at 200Interrupt handler console read, scheduled at 200Interrupt handler network recv, scheduled at 200
+End of pending interrupts
+	interrupts: off -> on
+In Machine::Run(), return from OneTick == Tick 117 ==
+In Machine::Run(), into OneInstruction == Tick 117 ==
+Reading VA 260, size 4
+	Translate 260 , read
+phys addr = 260
+	value read = 604110854
+At PC = 260	ADDIU r2,r0,6
+In Machine::Run(), return from OneInstruction  == Tick 117 ==
+In Machine::Run(), into OneTick == Tick 117 ==
+== Tick 118 ==
+	interrupts: on -> off
+Time: 118, interrupts off
+Pending interrupts:
+Interrupt handler timer, scheduled at 200Interrupt handler console read, scheduled at 200Interrupt handler network recv, scheduled at 200
+End of pending interrupts
+	interrupts: off -> on
+In Machine::Run(), return from OneTick == Tick 118 ==
+In Machine::Run(), into OneInstruction == Tick 118 ==
+Reading VA 264, size 4
+	Translate 264 , read
+phys addr = 264
+	value read = 12
+At PC = 264	SYSCALL
+In Machine::OneInstruction, RaiseException(SyscallException, 0), 118
+Exception: syscall
+Received Exception 1 type: 6
+
+In ExceptionHandler(), Received Exception 1 type: 6, 118
+Open
+
+In ExceptionHandler(), into SysOpen, 118
+In ExceptionHandler(), return from SysOpen, 118 return value: 1
+In Machine::Run(), return from OneInstruction  == Tick 118 ==
+In Machine::Run(), into OneTick == Tick 118 ==
+== Tick 119 ==
+	interrupts: on -> off
+Time: 119, interrupts off
+Pending interrupts:
+Interrupt handler timer, scheduled at 200Interrupt handler console read, scheduled at 200Interrupt handler network recv, scheduled at 200
+End of pending interrupts
+	interrupts: off -> on
+In Machine::Run(), return from OneTick == Tick 119 ==
+In Machine::Run(), into OneInstruction == Tick 119 ==
+Reading VA 268, size 4
+	Translate 268 , read
+phys addr = 268
+	value read = 65011720
+At PC = 268	JR r0,r31
+In Machine::Run(), return from OneInstruction  == Tick 119 ==
+In Machine::Run(), into OneTick == Tick 119 ==
+== Tick 120 ==
+	interrupts: on -> off
+Time: 120, interrupts off
+Pending interrupts:
+Interrupt handler timer, scheduled at 200Interrupt handler console read, scheduled at 200Interrupt handler network recv, scheduled at 200
+End of pending interrupts
+	interrupts: off -> on
+In Machine::Run(), return from OneTick == Tick 120 ==
+In Machine::Run(), into OneInstruction == Tick 120 ==
+Reading VA 272, size 4
+	Translate 272 , read
+phys addr = 272
+	value read = 0
+At PC = 272	SLL r0,r0,0
+In Machine::Run(), return from OneInstruction  == Tick 120 ==
+In Machine::Run(), into OneTick == Tick 120 ==
+== Tick 121 ==
+	interrupts: on -> off
+Time: 121, interrupts off
+Pending interrupts:
+Interrupt handler timer, scheduled at 200Interrupt handler console read, scheduled at 200Interrupt handler network recv, scheduled at 200
+End of pending interrupts
+	interrupts: off -> on
+In Machine::Run(), return from OneTick == Tick 121 ==
+In Machine::Run(), into OneInstruction == Tick 121 ==
+Reading VA 556, size 4
+	Translate 556 , read
+phys addr = 556
+	value read = -1346240424
+At PC = 556	SW r2,88(r30)
+Writing VA 1888, size 4, value 1
+	Translate 1888 , write
+phys addr = 1888
+In Machine::Run(), return from OneInstruction  == Tick 121 ==
+In Machine::Run(), into OneTick == Tick 121 ==
+== Tick 122 ==
+	interrupts: on -> off
+Time: 122, interrupts off
+Pending interrupts:
+Interrupt handler timer, scheduled at 200Interrupt handler console read, scheduled at 200Interrupt handler network recv, scheduled at 200
+End of pending interrupts
+	interrupts: off -> on
+In Machine::Run(), return from OneTick == Tick 122 ==
+In Machine::Run(), into OneInstruction == Tick 122 ==
+Reading VA 560, size 4
+	Translate 560 , read
+phys addr = 560
+	value read = 667156496
+At PC = 560	ADDIU r4,r30,16
+In Machine::Run(), return from OneInstruction  == Tick 122 ==
+In Machine::Run(), into OneTick == Tick 122 ==
+== Tick 123 ==
+	interrupts: on -> off
+Time: 123, interrupts off
+Pending interrupts:
+Interrupt handler timer, scheduled at 200Interrupt handler console read, scheduled at 200Interrupt handler network recv, scheduled at 200
+End of pending interrupts
+	interrupts: off -> on
+In Machine::Run(), return from OneTick == Tick 123 ==
+In Machine::Run(), into OneInstruction == Tick 123 ==
+Reading VA 564, size 4
+	Translate 564 , read
+phys addr = 564
+	value read = 604307457
+At PC = 564	ADDIU r5,r0,1
+In Machine::Run(), return from OneInstruction  == Tick 123 ==
+In Machine::Run(), into OneTick == Tick 123 ==
+== Tick 124 ==
+	interrupts: on -> off
+Time: 124, interrupts off
+Pending interrupts:
+Interrupt handler timer, scheduled at 200Interrupt handler console read, scheduled at 200Interrupt handler network recv, scheduled at 200
+End of pending interrupts
+	interrupts: off -> on
+In Machine::Run(), return from OneTick == Tick 124 ==
+In Machine::Run(), into OneInstruction == Tick 124 ==
+Reading VA 568, size 4
+	Translate 568 , read
+phys addr = 568
+	value read = -1882849196
+At PC = 568	LW r6,84(r30)
+Reading VA 1884, size 4
+	Translate 1884 , read
+phys addr = 1884
+	value read = 0
+In Machine::Run(), return from OneInstruction  == Tick 124 ==
+In Machine::Run(), into OneTick == Tick 124 ==
+== Tick 125 ==
+	interrupts: on -> off
+Time: 125, interrupts off
+Pending interrupts:
+Interrupt handler timer, scheduled at 200Interrupt handler console read, scheduled at 200Interrupt handler network recv, scheduled at 200
+End of pending interrupts
+	interrupts: off -> on
+In Machine::Run(), return from OneTick == Tick 125 ==
+In Machine::Run(), into OneInstruction == Tick 125 ==
+Reading VA 572, size 4
+	Translate 572 , read
+phys addr = 572
+	value read = 201326661
+At PC = 572	JAL 69
+In Machine::Run(), return from OneInstruction  == Tick 125 ==
+In Machine::Run(), into OneTick == Tick 125 ==
+== Tick 126 ==
+	interrupts: on -> off
+Time: 126, interrupts off
+Pending interrupts:
+Interrupt handler timer, scheduled at 200Interrupt handler console read, scheduled at 200Interrupt handler network recv, scheduled at 200
+End of pending interrupts
+	interrupts: off -> on
+In Machine::Run(), return from OneTick == Tick 126 ==
+In Machine::Run(), into OneInstruction == Tick 126 ==
+Reading VA 576, size 4
+	Translate 576 , read
+phys addr = 576
+	value read = 0
+At PC = 576	SLL r0,r0,0
+In Machine::Run(), return from OneInstruction  == Tick 126 ==
+In Machine::Run(), into OneTick == Tick 126 ==
+== Tick 127 ==
+	interrupts: on -> off
+Time: 127, interrupts off
+Pending interrupts:
+Interrupt handler timer, scheduled at 200Interrupt handler console read, scheduled at 200Interrupt handler network recv, scheduled at 200
+End of pending interrupts
+	interrupts: off -> on
+In Machine::Run(), return from OneTick == Tick 127 ==
+In Machine::Run(), into OneInstruction == Tick 127 ==
+Reading VA 276, size 4
+	Translate 276 , read
+phys addr = 276
+	value read = 604110856
+At PC = 276	ADDIU r2,r0,8
+In Machine::Run(), return from OneInstruction  == Tick 127 ==
+In Machine::Run(), into OneTick == Tick 127 ==
+== Tick 128 ==
+	interrupts: on -> off
+Time: 128, interrupts off
+Pending interrupts:
+Interrupt handler timer, scheduled at 200Interrupt handler console read, scheduled at 200Interrupt handler network recv, scheduled at 200
+End of pending interrupts
+	interrupts: off -> on
+In Machine::Run(), return from OneTick == Tick 128 ==
+In Machine::Run(), into OneInstruction == Tick 128 ==
+Reading VA 280, size 4
+	Translate 280 , read
+phys addr = 280
+	value read = 12
+At PC = 280	SYSCALL
+In Machine::OneInstruction, RaiseException(SyscallException, 0), 128
+Exception: syscall
+Received Exception 1 type: 8
+
+In ExceptionHandler(), Received Exception 1 type: 8, 128
+Write
+
+In ExceptionHandler(), into SysWrite, 128
+In ExceptionHandler(), return from SysWrite, 128 return value: 1
+In Machine::Run(), return from OneInstruction  == Tick 128 ==
+In Machine::Run(), into OneTick == Tick 128 ==
+== Tick 129 ==
+	interrupts: on -> off
+Time: 129, interrupts off
+Pending interrupts:
+Interrupt handler timer, scheduled at 200Interrupt handler console read, scheduled at 200Interrupt handler network recv, scheduled at 200
+End of pending interrupts
+	interrupts: off -> on
+In Machine::Run(), return from OneTick == Tick 129 ==
+In Machine::Run(), into OneInstruction == Tick 129 ==
+Reading VA 284, size 4
+	Translate 284 , read
+phys addr = 284
+	value read = 65011720
+At PC = 284	JR r0,r31
+In Machine::Run(), return from OneInstruction  == Tick 129 ==
+In Machine::Run(), into OneTick == Tick 129 ==
+== Tick 130 ==
+	interrupts: on -> off
+Time: 130, interrupts off
+Pending interrupts:
+Interrupt handler timer, scheduled at 200Interrupt handler console read, scheduled at 200Interrupt handler network recv, scheduled at 200
+End of pending interrupts
+	interrupts: off -> on
+In Machine::Run(), return from OneTick == Tick 130 ==
+In Machine::Run(), into OneInstruction == Tick 130 ==
+Reading VA 288, size 4
+	Translate 288 , read
+phys addr = 288
+	value read = 0
+At PC = 288	SLL r0,r0,0
+In Machine::Run(), return from OneInstruction  == Tick 130 ==
+In Machine::Run(), into OneTick == Tick 130 ==
+== Tick 131 ==
+	interrupts: on -> off
+Time: 131, interrupts off
+Pending interrupts:
+Interrupt handler timer, scheduled at 200Interrupt handler console read, scheduled at 200Interrupt handler network recv, scheduled at 200
+End of pending interrupts
+	interrupts: off -> on
+In Machine::Run(), return from OneTick == Tick 131 ==
+In Machine::Run(), into OneInstruction == Tick 131 ==
+Reading VA 580, size 4
+	Translate 580 , read
+phys addr = 580
+	value read = 667025456
+At PC = 580	ADDIU r2,r30,48
+In Machine::Run(), return from OneInstruction  == Tick 131 ==
+In Machine::Run(), into OneTick == Tick 131 ==
+== Tick 132 ==
+	interrupts: on -> off
+Time: 132, interrupts off
+Pending interrupts:
+Interrupt handler timer, scheduled at 200Interrupt handler console read, scheduled at 200Interrupt handler network recv, scheduled at 200
+End of pending interrupts
+	interrupts: off -> on
+In Machine::Run(), return from OneTick == Tick 132 ==
+In Machine::Run(), into OneInstruction == Tick 132 ==
+Reading VA 584, size 4
+	Translate 584 , read
+phys addr = 584
+	value read = 4202529
+At PC = 584	ADDU r4,r2,r0
+In Machine::Run(), return from OneInstruction  == Tick 132 ==
+In Machine::Run(), into OneTick == Tick 132 ==
+== Tick 133 ==
+	interrupts: on -> off
+Time: 133, interrupts off
+Pending interrupts:
+Interrupt handler timer, scheduled at 200Interrupt handler console read, scheduled at 200Interrupt handler network recv, scheduled at 200
+End of pending interrupts
+	interrupts: off -> on
+In Machine::Run(), return from OneTick == Tick 133 ==
+In Machine::Run(), into OneInstruction == Tick 133 ==
+Reading VA 588, size 4
+	Translate 588 , read
+phys addr = 588
+	value read = 604307457
+At PC = 588	ADDIU r5,r0,1
+In Machine::Run(), return from OneInstruction  == Tick 133 ==
+In Machine::Run(), into OneTick == Tick 133 ==
+== Tick 134 ==
+	interrupts: on -> off
+Time: 134, interrupts off
+Pending interrupts:
+Interrupt handler timer, scheduled at 200Interrupt handler console read, scheduled at 200Interrupt handler network recv, scheduled at 200
+End of pending interrupts
+	interrupts: off -> on
+In Machine::Run(), return from OneTick == Tick 134 ==
+In Machine::Run(), into OneInstruction == Tick 134 ==
+Reading VA 592, size 4
+	Translate 592 , read
+phys addr = 592
+	value read = -1882849196
+At PC = 592	LW r6,84(r30)
+Reading VA 1884, size 4
+	Translate 1884 , read
+phys addr = 1884
+	value read = 0
+In Machine::Run(), return from OneInstruction  == Tick 134 ==
+In Machine::Run(), into OneTick == Tick 134 ==
+== Tick 135 ==
+	interrupts: on -> off
+Time: 135, interrupts off
+Pending interrupts:
+Interrupt handler timer, scheduled at 200Interrupt handler console read, scheduled at 200Interrupt handler network recv, scheduled at 200
+End of pending interrupts
+	interrupts: off -> on
+In Machine::Run(), return from OneTick == Tick 135 ==
+In Machine::Run(), into OneInstruction == Tick 135 ==
+Reading VA 596, size 4
+	Translate 596 , read
+phys addr = 596
+	value read = 201326665
+At PC = 596	JAL 73
+In Machine::Run(), return from OneInstruction  == Tick 135 ==
+In Machine::Run(), into OneTick == Tick 135 ==
+== Tick 136 ==
+	interrupts: on -> off
+Time: 136, interrupts off
+Pending interrupts:
+Interrupt handler timer, scheduled at 200Interrupt handler console read, scheduled at 200Interrupt handler network recv, scheduled at 200
+End of pending interrupts
+	interrupts: off -> on
+In Machine::Run(), return from OneTick == Tick 136 ==
+In Machine::Run(), into OneInstruction == Tick 136 ==
+Reading VA 600, size 4
+	Translate 600 , read
+phys addr = 600
+	value read = 0
+At PC = 600	SLL r0,r0,0
+In Machine::Run(), return from OneInstruction  == Tick 136 ==
+In Machine::Run(), into OneTick == Tick 136 ==
+== Tick 137 ==
+	interrupts: on -> off
+Time: 137, interrupts off
+Pending interrupts:
+Interrupt handler timer, scheduled at 200Interrupt handler console read, scheduled at 200Interrupt handler network recv, scheduled at 200
+End of pending interrupts
+	interrupts: off -> on
+In Machine::Run(), return from OneTick == Tick 137 ==
+In Machine::Run(), into OneInstruction == Tick 137 ==
+Reading VA 292, size 4
+	Translate 292 , read
+phys addr = 292
+	value read = 604110855
+At PC = 292	ADDIU r2,r0,7
+In Machine::Run(), return from OneInstruction  == Tick 137 ==
+In Machine::Run(), into OneTick == Tick 137 ==
+== Tick 138 ==
+	interrupts: on -> off
+Time: 138, interrupts off
+Pending interrupts:
+Interrupt handler timer, scheduled at 200Interrupt handler console read, scheduled at 200Interrupt handler network recv, scheduled at 200
+End of pending interrupts
+	interrupts: off -> on
+In Machine::Run(), return from OneTick == Tick 138 ==
+In Machine::Run(), into OneInstruction == Tick 138 ==
+Reading VA 296, size 4
+	Translate 296 , read
+phys addr = 296
+	value read = 12
+At PC = 296	SYSCALL
+In Machine::OneInstruction, RaiseException(SyscallException, 0), 138
+Exception: syscall
+Received Exception 1 type: 7
+
+In ExceptionHandler(), Received Exception 1 type: 7, 138
+Read
+
+In ExceptionHandler(), into SysRead, 138
+In ExceptionHandler(), return from SysRead, 138 return value: 0
+In Machine::Run(), return from OneInstruction  == Tick 138 ==
+In Machine::Run(), into OneTick == Tick 138 ==
+== Tick 139 ==
+	interrupts: on -> off
+Time: 139, interrupts off
+Pending interrupts:
+Interrupt handler timer, scheduled at 200Interrupt handler console read, scheduled at 200Interrupt handler network recv, scheduled at 200
+End of pending interrupts
+	interrupts: off -> on
+In Machine::Run(), return from OneTick == Tick 139 ==
+In Machine::Run(), into OneInstruction == Tick 139 ==
+Reading VA 300, size 4
+	Translate 300 , read
+phys addr = 300
+	value read = 65011720
+At PC = 300	JR r0,r31
+In Machine::Run(), return from OneInstruction  == Tick 139 ==
+In Machine::Run(), into OneTick == Tick 139 ==
+== Tick 140 ==
+	interrupts: on -> off
+Time: 140, interrupts off
+Pending interrupts:
+Interrupt handler timer, scheduled at 200Interrupt handler console read, scheduled at 200Interrupt handler network recv, scheduled at 200
+End of pending interrupts
+	interrupts: off -> on
+In Machine::Run(), return from OneTick == Tick 140 ==
+In Machine::Run(), into OneInstruction == Tick 140 ==
+Reading VA 304, size 4
+	Translate 304 , read
+phys addr = 304
+	value read = 0
+At PC = 304	SLL r0,r0,0
+In Machine::Run(), return from OneInstruction  == Tick 140 ==
+In Machine::Run(), into OneTick == Tick 140 ==
+== Tick 141 ==
+	interrupts: on -> off
+Time: 141, interrupts off
+Pending interrupts:
+Interrupt handler timer, scheduled at 200Interrupt handler console read, scheduled at 200Interrupt handler network recv, scheduled at 200
+End of pending interrupts
+	interrupts: off -> on
+In Machine::Run(), return from OneTick == Tick 141 ==
+In Machine::Run(), into OneInstruction == Tick 141 ==
+Reading VA 604, size 4
+	Translate 604 , read
+phys addr = 604
+	value read = 667025456
+At PC = 604	ADDIU r2,r30,48
+In Machine::Run(), return from OneInstruction  == Tick 141 ==
+In Machine::Run(), into OneTick == Tick 141 ==
+== Tick 142 ==
+	interrupts: on -> off
+Time: 142, interrupts off
+Pending interrupts:
+Interrupt handler timer, scheduled at 200Interrupt handler console read, scheduled at 200Interrupt handler network recv, scheduled at 200
+End of pending interrupts
+	interrupts: off -> on
+In Machine::Run(), return from OneTick == Tick 142 ==
+In Machine::Run(), into OneInstruction == Tick 142 ==
+Reading VA 608, size 4
+	Translate 608 , read
+phys addr = 608
+	value read = 4202529
+At PC = 608	ADDU r4,r2,r0
+In Machine::Run(), return from OneInstruction  == Tick 142 ==
+In Machine::Run(), into OneTick == Tick 142 ==
+== Tick 143 ==
+	interrupts: on -> off
+Time: 143, interrupts off
+Pending interrupts:
+Interrupt handler timer, scheduled at 200Interrupt handler console read, scheduled at 200Interrupt handler network recv, scheduled at 200
+End of pending interrupts
+	interrupts: off -> on
+In Machine::Run(), return from OneTick == Tick 143 ==
+In Machine::Run(), into OneInstruction == Tick 143 ==
+Reading VA 612, size 4
+	Translate 612 , read
+phys addr = 612
+	value read = 604307457
+At PC = 612	ADDIU r5,r0,1
+In Machine::Run(), return from OneInstruction  == Tick 143 ==
+In Machine::Run(), into OneTick == Tick 143 ==
+== Tick 144 ==
+	interrupts: on -> off
+Time: 144, interrupts off
+Pending interrupts:
+Interrupt handler timer, scheduled at 200Interrupt handler console read, scheduled at 200Interrupt handler network recv, scheduled at 200
+End of pending interrupts
+	interrupts: off -> on
+In Machine::Run(), return from OneTick == Tick 144 ==
+In Machine::Run(), into OneInstruction == Tick 144 ==
+Reading VA 616, size 4
+	Translate 616 , read
+phys addr = 616
+	value read = -1882849192
+At PC = 616	LW r6,88(r30)
+Reading VA 1888, size 4
+	Translate 1888 , read
+phys addr = 1888
+	value read = 1
+In Machine::Run(), return from OneInstruction  == Tick 144 ==
+In Machine::Run(), into OneTick == Tick 144 ==
+== Tick 145 ==
+	interrupts: on -> off
+Time: 145, interrupts off
+Pending interrupts:
+Interrupt handler timer, scheduled at 200Interrupt handler console read, scheduled at 200Interrupt handler network recv, scheduled at 200
+End of pending interrupts
+	interrupts: off -> on
+In Machine::Run(), return from OneTick == Tick 145 ==
+In Machine::Run(), into OneInstruction == Tick 145 ==
+Reading VA 620, size 4
+	Translate 620 , read
+phys addr = 620
+	value read = 201326665
+At PC = 620	JAL 73
+In Machine::Run(), return from OneInstruction  == Tick 145 ==
+In Machine::Run(), into OneTick == Tick 145 ==
+== Tick 146 ==
+	interrupts: on -> off
+Time: 146, interrupts off
+Pending interrupts:
+Interrupt handler timer, scheduled at 200Interrupt handler console read, scheduled at 200Interrupt handler network recv, scheduled at 200
+End of pending interrupts
+	interrupts: off -> on
+In Machine::Run(), return from OneTick == Tick 146 ==
+In Machine::Run(), into OneInstruction == Tick 146 ==
+Reading VA 624, size 4
+	Translate 624 , read
+phys addr = 624
+	value read = 0
+At PC = 624	SLL r0,r0,0
+In Machine::Run(), return from OneInstruction  == Tick 146 ==
+In Machine::Run(), into OneTick == Tick 146 ==
+== Tick 147 ==
+	interrupts: on -> off
+Time: 147, interrupts off
+Pending interrupts:
+Interrupt handler timer, scheduled at 200Interrupt handler console read, scheduled at 200Interrupt handler network recv, scheduled at 200
+End of pending interrupts
+	interrupts: off -> on
+In Machine::Run(), return from OneTick == Tick 147 ==
+In Machine::Run(), into OneInstruction == Tick 147 ==
+Reading VA 292, size 4
+	Translate 292 , read
+phys addr = 292
+	value read = 604110855
+At PC = 292	ADDIU r2,r0,7
+In Machine::Run(), return from OneInstruction  == Tick 147 ==
+In Machine::Run(), into OneTick == Tick 147 ==
+== Tick 148 ==
+	interrupts: on -> off
+Time: 148, interrupts off
+Pending interrupts:
+Interrupt handler timer, scheduled at 200Interrupt handler console read, scheduled at 200Interrupt handler network recv, scheduled at 200
+End of pending interrupts
+	interrupts: off -> on
+In Machine::Run(), return from OneTick == Tick 148 ==
+In Machine::Run(), into OneInstruction == Tick 148 ==
+Reading VA 296, size 4
+	Translate 296 , read
+phys addr = 296
+	value read = 12
+At PC = 296	SYSCALL
+In Machine::OneInstruction, RaiseException(SyscallException, 0), 148
+Exception: syscall
+Received Exception 1 type: 7
+
+In ExceptionHandler(), Received Exception 1 type: 7, 148
+Read
+
+In ExceptionHandler(), into SysRead, 148
+In ExceptionHandler(), return from SysRead, 148 return value: 1
+In Machine::Run(), return from OneInstruction  == Tick 148 ==
+In Machine::Run(), into OneTick == Tick 148 ==
+== Tick 149 ==
+	interrupts: on -> off
+Time: 149, interrupts off
+Pending interrupts:
+Interrupt handler timer, scheduled at 200Interrupt handler console read, scheduled at 200Interrupt handler network recv, scheduled at 200
+End of pending interrupts
+	interrupts: off -> on
+In Machine::Run(), return from OneTick == Tick 149 ==
+In Machine::Run(), into OneInstruction == Tick 149 ==
+Reading VA 300, size 4
+	Translate 300 , read
+phys addr = 300
+	value read = 65011720
+At PC = 300	JR r0,r31
+In Machine::Run(), return from OneInstruction  == Tick 149 ==
+In Machine::Run(), into OneTick == Tick 149 ==
+== Tick 150 ==
+	interrupts: on -> off
+Time: 150, interrupts off
+Pending interrupts:
+Interrupt handler timer, scheduled at 200Interrupt handler console read, scheduled at 200Interrupt handler network recv, scheduled at 200
+End of pending interrupts
+	interrupts: off -> on
+In Machine::Run(), return from OneTick == Tick 150 ==
+In Machine::Run(), into OneInstruction == Tick 150 ==
+Reading VA 304, size 4
+	Translate 304 , read
+phys addr = 304
+	value read = 0
+At PC = 304	SLL r0,r0,0
+In Machine::Run(), return from OneInstruction  == Tick 150 ==
+In Machine::Run(), into OneTick == Tick 150 ==
+== Tick 151 ==
+	interrupts: on -> off
+Time: 151, interrupts off
+Pending interrupts:
+Interrupt handler timer, scheduled at 200Interrupt handler console read, scheduled at 200Interrupt handler network recv, scheduled at 200
+End of pending interrupts
+	interrupts: off -> on
+In Machine::Run(), return from OneTick == Tick 151 ==
+In Machine::Run(), into OneInstruction == Tick 151 ==
+Reading VA 628, size 4
+	Translate 628 , read
+phys addr = 628
+	value read = 667025425
+At PC = 628	ADDIU r2,r30,17
+In Machine::Run(), return from OneInstruction  == Tick 151 ==
+In Machine::Run(), into OneTick == Tick 151 ==
+== Tick 152 ==
+	interrupts: on -> off
+Time: 152, interrupts off
+Pending interrupts:
+Interrupt handler timer, scheduled at 200Interrupt handler console read, scheduled at 200Interrupt handler network recv, scheduled at 200
+End of pending interrupts
+	interrupts: off -> on
+In Machine::Run(), return from OneTick == Tick 152 ==
+In Machine::Run(), into OneInstruction == Tick 152 ==
+Reading VA 632, size 4
+	Translate 632 , read
+phys addr = 632
+	value read = 4202529
+At PC = 632	ADDU r4,r2,r0
+In Machine::Run(), return from OneInstruction  == Tick 152 ==
+In Machine::Run(), into OneTick == Tick 152 ==
+== Tick 153 ==
+	interrupts: on -> off
+Time: 153, interrupts off
+Pending interrupts:
+Interrupt handler timer, scheduled at 200Interrupt handler console read, scheduled at 200Interrupt handler network recv, scheduled at 200
+End of pending interrupts
+	interrupts: off -> on
+In Machine::Run(), return from OneTick == Tick 153 ==
+In Machine::Run(), into OneInstruction == Tick 153 ==
+Reading VA 636, size 4
+	Translate 636 , read
+phys addr = 636
+	value read = 604307481
+At PC = 636	ADDIU r5,r0,25
+In Machine::Run(), return from OneInstruction  == Tick 153 ==
+In Machine::Run(), into OneTick == Tick 153 ==
+== Tick 154 ==
+	interrupts: on -> off
+Time: 154, interrupts off
+Pending interrupts:
+Interrupt handler timer, scheduled at 200Interrupt handler console read, scheduled at 200Interrupt handler network recv, scheduled at 200
+End of pending interrupts
+	interrupts: off -> on
+In Machine::Run(), return from OneTick == Tick 154 ==
+In Machine::Run(), into OneInstruction == Tick 154 ==
+Reading VA 640, size 4
+	Translate 640 , read
+phys addr = 640
+	value read = -1882849192
+At PC = 640	LW r6,88(r30)
+Reading VA 1888, size 4
+	Translate 1888 , read
+phys addr = 1888
+	value read = 1
+In Machine::Run(), return from OneInstruction  == Tick 154 ==
+In Machine::Run(), into OneTick == Tick 154 ==
+== Tick 155 ==
+	interrupts: on -> off
+Time: 155, interrupts off
+Pending interrupts:
+Interrupt handler timer, scheduled at 200Interrupt handler console read, scheduled at 200Interrupt handler network recv, scheduled at 200
+End of pending interrupts
+	interrupts: off -> on
+In Machine::Run(), return from OneTick == Tick 155 ==
+In Machine::Run(), into OneInstruction == Tick 155 ==
+Reading VA 644, size 4
+	Translate 644 , read
+phys addr = 644
+	value read = 201326661
+At PC = 644	JAL 69
+In Machine::Run(), return from OneInstruction  == Tick 155 ==
+In Machine::Run(), into OneTick == Tick 155 ==
+== Tick 156 ==
+	interrupts: on -> off
+Time: 156, interrupts off
+Pending interrupts:
+Interrupt handler timer, scheduled at 200Interrupt handler console read, scheduled at 200Interrupt handler network recv, scheduled at 200
+End of pending interrupts
+	interrupts: off -> on
+In Machine::Run(), return from OneTick == Tick 156 ==
+In Machine::Run(), into OneInstruction == Tick 156 ==
+Reading VA 648, size 4
+	Translate 648 , read
+phys addr = 648
+	value read = 0
+At PC = 648	SLL r0,r0,0
+In Machine::Run(), return from OneInstruction  == Tick 156 ==
+In Machine::Run(), into OneTick == Tick 156 ==
+== Tick 157 ==
+	interrupts: on -> off
+Time: 157, interrupts off
+Pending interrupts:
+Interrupt handler timer, scheduled at 200Interrupt handler console read, scheduled at 200Interrupt handler network recv, scheduled at 200
+End of pending interrupts
+	interrupts: off -> on
+In Machine::Run(), return from OneTick == Tick 157 ==
+In Machine::Run(), into OneInstruction == Tick 157 ==
+Reading VA 276, size 4
+	Translate 276 , read
+phys addr = 276
+	value read = 604110856
+At PC = 276	ADDIU r2,r0,8
+In Machine::Run(), return from OneInstruction  == Tick 157 ==
+In Machine::Run(), into OneTick == Tick 157 ==
+== Tick 158 ==
+	interrupts: on -> off
+Time: 158, interrupts off
+Pending interrupts:
+Interrupt handler timer, scheduled at 200Interrupt handler console read, scheduled at 200Interrupt handler network recv, scheduled at 200
+End of pending interrupts
+	interrupts: off -> on
+In Machine::Run(), return from OneTick == Tick 158 ==
+In Machine::Run(), into OneInstruction == Tick 158 ==
+Reading VA 280, size 4
+	Translate 280 , read
+phys addr = 280
+	value read = 12
+At PC = 280	SYSCALL
+In Machine::OneInstruction, RaiseException(SyscallException, 0), 158
+Exception: syscall
+Received Exception 1 type: 8
+
+In ExceptionHandler(), Received Exception 1 type: 8, 158
+Write
+
+In ExceptionHandler(), into SysWrite, 158
+In ExceptionHandler(), return from SysWrite, 158 return value: 25
+In Machine::Run(), return from OneInstruction  == Tick 158 ==
+In Machine::Run(), into OneTick == Tick 158 ==
+== Tick 159 ==
+	interrupts: on -> off
+Time: 159, interrupts off
+Pending interrupts:
+Interrupt handler timer, scheduled at 200Interrupt handler console read, scheduled at 200Interrupt handler network recv, scheduled at 200
+End of pending interrupts
+	interrupts: off -> on
+In Machine::Run(), return from OneTick == Tick 159 ==
+In Machine::Run(), into OneInstruction == Tick 159 ==
+Reading VA 284, size 4
+	Translate 284 , read
+phys addr = 284
+	value read = 65011720
+At PC = 284	JR r0,r31
+In Machine::Run(), return from OneInstruction  == Tick 159 ==
+In Machine::Run(), into OneTick == Tick 159 ==
+== Tick 160 ==
+	interrupts: on -> off
+Time: 160, interrupts off
+Pending interrupts:
+Interrupt handler timer, scheduled at 200Interrupt handler console read, scheduled at 200Interrupt handler network recv, scheduled at 200
+End of pending interrupts
+	interrupts: off -> on
+In Machine::Run(), return from OneTick == Tick 160 ==
+In Machine::Run(), into OneInstruction == Tick 160 ==
+Reading VA 288, size 4
+	Translate 288 , read
+phys addr = 288
+	value read = 0
+At PC = 288	SLL r0,r0,0
+In Machine::Run(), return from OneInstruction  == Tick 160 ==
+In Machine::Run(), into OneTick == Tick 160 ==
+== Tick 161 ==
+	interrupts: on -> off
+Time: 161, interrupts off
+Pending interrupts:
+Interrupt handler timer, scheduled at 200Interrupt handler console read, scheduled at 200Interrupt handler network recv, scheduled at 200
+End of pending interrupts
+	interrupts: off -> on
+In Machine::Run(), return from OneTick == Tick 161 ==
+In Machine::Run(), into OneInstruction == Tick 161 ==
+Reading VA 652, size 4
+	Translate 652 , read
+phys addr = 652
+	value read = 667025456
+At PC = 652	ADDIU r2,r30,48
+In Machine::Run(), return from OneInstruction  == Tick 161 ==
+In Machine::Run(), into OneTick == Tick 161 ==
+== Tick 162 ==
+	interrupts: on -> off
+Time: 162, interrupts off
+Pending interrupts:
+Interrupt handler timer, scheduled at 200Interrupt handler console read, scheduled at 200Interrupt handler network recv, scheduled at 200
+End of pending interrupts
+	interrupts: off -> on
+In Machine::Run(), return from OneTick == Tick 162 ==
+In Machine::Run(), into OneInstruction == Tick 162 ==
+Reading VA 656, size 4
+	Translate 656 , read
+phys addr = 656
+	value read = 4202529
+At PC = 656	ADDU r4,r2,r0
+In Machine::Run(), return from OneInstruction  == Tick 162 ==
+In Machine::Run(), into OneTick == Tick 162 ==
+== Tick 163 ==
+	interrupts: on -> off
+Time: 163, interrupts off
+Pending interrupts:
+Interrupt handler timer, scheduled at 200Interrupt handler console read, scheduled at 200Interrupt handler network recv, scheduled at 200
+End of pending interrupts
+	interrupts: off -> on
+In Machine::Run(), return from OneTick == Tick 163 ==
+In Machine::Run(), into OneInstruction == Tick 163 ==
+Reading VA 660, size 4
+	Translate 660 , read
+phys addr = 660
+	value read = 604307556
+At PC = 660	ADDIU r5,r0,100
+In Machine::Run(), return from OneInstruction  == Tick 163 ==
+In Machine::Run(), into OneTick == Tick 163 ==
+== Tick 164 ==
+	interrupts: on -> off
+Time: 164, interrupts off
+Pending interrupts:
+Interrupt handler timer, scheduled at 200Interrupt handler console read, scheduled at 200Interrupt handler network recv, scheduled at 200
+End of pending interrupts
+	interrupts: off -> on
+In Machine::Run(), return from OneTick == Tick 164 ==
+In Machine::Run(), into OneInstruction == Tick 164 ==
+Reading VA 664, size 4
+	Translate 664 , read
+phys addr = 664
+	value read = -1882849196
+At PC = 664	LW r6,84(r30)
+Reading VA 1884, size 4
+	Translate 1884 , read
+phys addr = 1884
+	value read = 0
+In Machine::Run(), return from OneInstruction  == Tick 164 ==
+In Machine::Run(), into OneTick == Tick 164 ==
+== Tick 165 ==
+	interrupts: on -> off
+Time: 165, interrupts off
+Pending interrupts:
+Interrupt handler timer, scheduled at 200Interrupt handler console read, scheduled at 200Interrupt handler network recv, scheduled at 200
+End of pending interrupts
+	interrupts: off -> on
+In Machine::Run(), return from OneTick == Tick 165 ==
+In Machine::Run(), into OneInstruction == Tick 165 ==
+Reading VA 668, size 4
+	Translate 668 , read
+phys addr = 668
+	value read = 201326665
+At PC = 668	JAL 73
+In Machine::Run(), return from OneInstruction  == Tick 165 ==
+In Machine::Run(), into OneTick == Tick 165 ==
+== Tick 166 ==
+	interrupts: on -> off
+Time: 166, interrupts off
+Pending interrupts:
+Interrupt handler timer, scheduled at 200Interrupt handler console read, scheduled at 200Interrupt handler network recv, scheduled at 200
+End of pending interrupts
+	interrupts: off -> on
+In Machine::Run(), return from OneTick == Tick 166 ==
+In Machine::Run(), into OneInstruction == Tick 166 ==
+Reading VA 672, size 4
+	Translate 672 , read
+phys addr = 672
+	value read = 0
+At PC = 672	SLL r0,r0,0
+In Machine::Run(), return from OneInstruction  == Tick 166 ==
+In Machine::Run(), into OneTick == Tick 166 ==
+== Tick 167 ==
+	interrupts: on -> off
+Time: 167, interrupts off
+Pending interrupts:
+Interrupt handler timer, scheduled at 200Interrupt handler console read, scheduled at 200Interrupt handler network recv, scheduled at 200
+End of pending interrupts
+	interrupts: off -> on
+In Machine::Run(), return from OneTick == Tick 167 ==
+In Machine::Run(), into OneInstruction == Tick 167 ==
+Reading VA 292, size 4
+	Translate 292 , read
+phys addr = 292
+	value read = 604110855
+At PC = 292	ADDIU r2,r0,7
+In Machine::Run(), return from OneInstruction  == Tick 167 ==
+In Machine::Run(), into OneTick == Tick 167 ==
+== Tick 168 ==
+	interrupts: on -> off
+Time: 168, interrupts off
+Pending interrupts:
+Interrupt handler timer, scheduled at 200Interrupt handler console read, scheduled at 200Interrupt handler network recv, scheduled at 200
+End of pending interrupts
+	interrupts: off -> on
+In Machine::Run(), return from OneTick == Tick 168 ==
+In Machine::Run(), into OneInstruction == Tick 168 ==
+Reading VA 296, size 4
+	Translate 296 , read
+phys addr = 296
+	value read = 12
+At PC = 296	SYSCALL
+In Machine::OneInstruction, RaiseException(SyscallException, 0), 168
+Exception: syscall
+Received Exception 1 type: 7
+
+In ExceptionHandler(), Received Exception 1 type: 7, 168
+Read
+
+In ExceptionHandler(), into SysRead, 168
+In ExceptionHandler(), return from SysRead, 168 return value: 25
+In Machine::Run(), return from OneInstruction  == Tick 168 ==
+In Machine::Run(), into OneTick == Tick 168 ==
+== Tick 169 ==
+	interrupts: on -> off
+Time: 169, interrupts off
+Pending interrupts:
+Interrupt handler timer, scheduled at 200Interrupt handler console read, scheduled at 200Interrupt handler network recv, scheduled at 200
+End of pending interrupts
+	interrupts: off -> on
+In Machine::Run(), return from OneTick == Tick 169 ==
+In Machine::Run(), into OneInstruction == Tick 169 ==
+Reading VA 300, size 4
+	Translate 300 , read
+phys addr = 300
+	value read = 65011720
+At PC = 300	JR r0,r31
+In Machine::Run(), return from OneInstruction  == Tick 169 ==
+In Machine::Run(), into OneTick == Tick 169 ==
+== Tick 170 ==
+	interrupts: on -> off
+Time: 170, interrupts off
+Pending interrupts:
+Interrupt handler timer, scheduled at 200Interrupt handler console read, scheduled at 200Interrupt handler network recv, scheduled at 200
+End of pending interrupts
+	interrupts: off -> on
+In Machine::Run(), return from OneTick == Tick 170 ==
+In Machine::Run(), into OneInstruction == Tick 170 ==
+Reading VA 304, size 4
+	Translate 304 , read
+phys addr = 304
+	value read = 0
+At PC = 304	SLL r0,r0,0
+In Machine::Run(), return from OneInstruction  == Tick 170 ==
+In Machine::Run(), into OneTick == Tick 170 ==
+== Tick 171 ==
+	interrupts: on -> off
+Time: 171, interrupts off
+Pending interrupts:
+Interrupt handler timer, scheduled at 200Interrupt handler console read, scheduled at 200Interrupt handler network recv, scheduled at 200
+End of pending interrupts
+	interrupts: off -> on
+In Machine::Run(), return from OneTick == Tick 171 ==
+In Machine::Run(), into OneInstruction == Tick 171 ==
+Reading VA 676, size 4
+	Translate 676 , read
+phys addr = 676
+	value read = 667025456
+At PC = 676	ADDIU r2,r30,48
+In Machine::Run(), return from OneInstruction  == Tick 171 ==
+In Machine::Run(), into OneTick == Tick 171 ==
+== Tick 172 ==
+	interrupts: on -> off
+Time: 172, interrupts off
+Pending interrupts:
+Interrupt handler timer, scheduled at 200Interrupt handler console read, scheduled at 200Interrupt handler network recv, scheduled at 200
+End of pending interrupts
+	interrupts: off -> on
+In Machine::Run(), return from OneTick == Tick 172 ==
+In Machine::Run(), into OneInstruction == Tick 172 ==
+Reading VA 680, size 4
+	Translate 680 , read
+phys addr = 680
+	value read = 4202529
+At PC = 680	ADDU r4,r2,r0
+In Machine::Run(), return from OneInstruction  == Tick 172 ==
+In Machine::Run(), into OneTick == Tick 172 ==
+== Tick 173 ==
+	interrupts: on -> off
+Time: 173, interrupts off
+Pending interrupts:
+Interrupt handler timer, scheduled at 200Interrupt handler console read, scheduled at 200Interrupt handler network recv, scheduled at 200
+End of pending interrupts
+	interrupts: off -> on
+In Machine::Run(), return from OneTick == Tick 173 ==
+In Machine::Run(), into OneInstruction == Tick 173 ==
+Reading VA 684, size 4
+	Translate 684 , read
+phys addr = 684
+	value read = 604307556
+At PC = 684	ADDIU r5,r0,100
+In Machine::Run(), return from OneInstruction  == Tick 173 ==
+In Machine::Run(), into OneTick == Tick 173 ==
+== Tick 174 ==
+	interrupts: on -> off
+Time: 174, interrupts off
+Pending interrupts:
+Interrupt handler timer, scheduled at 200Interrupt handler console read, scheduled at 200Interrupt handler network recv, scheduled at 200
+End of pending interrupts
+	interrupts: off -> on
+In Machine::Run(), return from OneTick == Tick 174 ==
+In Machine::Run(), into OneInstruction == Tick 174 ==
+Reading VA 688, size 4
+	Translate 688 , read
+phys addr = 688
+	value read = -1882849192
+At PC = 688	LW r6,88(r30)
+Reading VA 1888, size 4
+	Translate 1888 , read
+phys addr = 1888
+	value read = 1
+In Machine::Run(), return from OneInstruction  == Tick 174 ==
+In Machine::Run(), into OneTick == Tick 174 ==
+== Tick 175 ==
+	interrupts: on -> off
+Time: 175, interrupts off
+Pending interrupts:
+Interrupt handler timer, scheduled at 200Interrupt handler console read, scheduled at 200Interrupt handler network recv, scheduled at 200
+End of pending interrupts
+	interrupts: off -> on
+In Machine::Run(), return from OneTick == Tick 175 ==
+In Machine::Run(), into OneInstruction == Tick 175 ==
+Reading VA 692, size 4
+	Translate 692 , read
+phys addr = 692
+	value read = 201326665
+At PC = 692	JAL 73
+In Machine::Run(), return from OneInstruction  == Tick 175 ==
+In Machine::Run(), into OneTick == Tick 175 ==
+== Tick 176 ==
+	interrupts: on -> off
+Time: 176, interrupts off
+Pending interrupts:
+Interrupt handler timer, scheduled at 200Interrupt handler console read, scheduled at 200Interrupt handler network recv, scheduled at 200
+End of pending interrupts
+	interrupts: off -> on
+In Machine::Run(), return from OneTick == Tick 176 ==
+In Machine::Run(), into OneInstruction == Tick 176 ==
+Reading VA 696, size 4
+	Translate 696 , read
+phys addr = 696
+	value read = 0
+At PC = 696	SLL r0,r0,0
+In Machine::Run(), return from OneInstruction  == Tick 176 ==
+In Machine::Run(), into OneTick == Tick 176 ==
+== Tick 177 ==
+	interrupts: on -> off
+Time: 177, interrupts off
+Pending interrupts:
+Interrupt handler timer, scheduled at 200Interrupt handler console read, scheduled at 200Interrupt handler network recv, scheduled at 200
+End of pending interrupts
+	interrupts: off -> on
+In Machine::Run(), return from OneTick == Tick 177 ==
+In Machine::Run(), into OneInstruction == Tick 177 ==
+Reading VA 292, size 4
+	Translate 292 , read
+phys addr = 292
+	value read = 604110855
+At PC = 292	ADDIU r2,r0,7
+In Machine::Run(), return from OneInstruction  == Tick 177 ==
+In Machine::Run(), into OneTick == Tick 177 ==
+== Tick 178 ==
+	interrupts: on -> off
+Time: 178, interrupts off
+Pending interrupts:
+Interrupt handler timer, scheduled at 200Interrupt handler console read, scheduled at 200Interrupt handler network recv, scheduled at 200
+End of pending interrupts
+	interrupts: off -> on
+In Machine::Run(), return from OneTick == Tick 178 ==
+In Machine::Run(), into OneInstruction == Tick 178 ==
+Reading VA 296, size 4
+	Translate 296 , read
+phys addr = 296
+	value read = 12
+At PC = 296	SYSCALL
+In Machine::OneInstruction, RaiseException(SyscallException, 0), 178
+Exception: syscall
+Received Exception 1 type: 7
+
+In ExceptionHandler(), Received Exception 1 type: 7, 178
+Read
+
+In ExceptionHandler(), into SysRead, 178
+In ExceptionHandler(), return from SysRead, 178 return value: 0
+In Machine::Run(), return from OneInstruction  == Tick 178 ==
+In Machine::Run(), into OneTick == Tick 178 ==
+== Tick 179 ==
+	interrupts: on -> off
+Time: 179, interrupts off
+Pending interrupts:
+Interrupt handler timer, scheduled at 200Interrupt handler console read, scheduled at 200Interrupt handler network recv, scheduled at 200
+End of pending interrupts
+	interrupts: off -> on
+In Machine::Run(), return from OneTick == Tick 179 ==
+In Machine::Run(), into OneInstruction == Tick 179 ==
+Reading VA 300, size 4
+	Translate 300 , read
+phys addr = 300
+	value read = 65011720
+At PC = 300	JR r0,r31
+In Machine::Run(), return from OneInstruction  == Tick 179 ==
+In Machine::Run(), into OneTick == Tick 179 ==
+== Tick 180 ==
+	interrupts: on -> off
+Time: 180, interrupts off
+Pending interrupts:
+Interrupt handler timer, scheduled at 200Interrupt handler console read, scheduled at 200Interrupt handler network recv, scheduled at 200
+End of pending interrupts
+	interrupts: off -> on
+In Machine::Run(), return from OneTick == Tick 180 ==
+In Machine::Run(), into OneInstruction == Tick 180 ==
+Reading VA 304, size 4
+	Translate 304 , read
+phys addr = 304
+	value read = 0
+At PC = 304	SLL r0,r0,0
+In Machine::Run(), return from OneInstruction  == Tick 180 ==
+In Machine::Run(), into OneTick == Tick 180 ==
+== Tick 181 ==
+	interrupts: on -> off
+Time: 181, interrupts off
+Pending interrupts:
+Interrupt handler timer, scheduled at 200Interrupt handler console read, scheduled at 200Interrupt handler network recv, scheduled at 200
+End of pending interrupts
+	interrupts: off -> on
+In Machine::Run(), return from OneTick == Tick 181 ==
+In Machine::Run(), into OneInstruction == Tick 181 ==
+Reading VA 700, size 4
+	Translate 700 , read
+phys addr = 700
+	value read = 1006895104
+At PC = 700	LUI r4,0
+Executing: LUI r, 0
+In Machine::Run(), return from OneInstruction  == Tick 181 ==
+In Machine::Run(), into OneTick == Tick 181 ==
+== Tick 182 ==
+	interrupts: on -> off
+Time: 182, interrupts off
+Pending interrupts:
+Interrupt handler timer, scheduled at 200Interrupt handler console read, scheduled at 200Interrupt handler network recv, scheduled at 200
+End of pending interrupts
+	interrupts: off -> on
+In Machine::Run(), return from OneTick == Tick 182 ==
+In Machine::Run(), into OneInstruction == Tick 182 ==
+Reading VA 704, size 4
+	Translate 704 , read
+phys addr = 704
+	value read = 612631320
+At PC = 704	ADDIU r4,r4,792
+In Machine::Run(), return from OneInstruction  == Tick 182 ==
+In Machine::Run(), into OneTick == Tick 182 ==
+== Tick 183 ==
+	interrupts: on -> off
+Time: 183, interrupts off
+Pending interrupts:
+Interrupt handler timer, scheduled at 200Interrupt handler console read, scheduled at 200Interrupt handler network recv, scheduled at 200
+End of pending interrupts
+	interrupts: off -> on
+In Machine::Run(), return from OneTick == Tick 183 ==
+In Machine::Run(), into OneInstruction == Tick 183 ==
+Reading VA 708, size 4
+	Translate 708 , read
+phys addr = 708
+	value read = 201326605
+At PC = 708	JAL 13
+In Machine::Run(), return from OneInstruction  == Tick 183 ==
+In Machine::Run(), into OneTick == Tick 183 ==
+== Tick 184 ==
+	interrupts: on -> off
+Time: 184, interrupts off
+Pending interrupts:
+Interrupt handler timer, scheduled at 200Interrupt handler console read, scheduled at 200Interrupt handler network recv, scheduled at 200
+End of pending interrupts
+	interrupts: off -> on
+In Machine::Run(), return from OneTick == Tick 184 ==
+In Machine::Run(), into OneInstruction == Tick 184 ==
+Reading VA 712, size 4
+	Translate 712 , read
+phys addr = 712
+	value read = 0
+At PC = 712	SLL r0,r0,0
+In Machine::Run(), return from OneInstruction  == Tick 184 ==
+In Machine::Run(), into OneTick == Tick 184 ==
+== Tick 185 ==
+	interrupts: on -> off
+Time: 185, interrupts off
+Pending interrupts:
+Interrupt handler timer, scheduled at 200Interrupt handler console read, scheduled at 200Interrupt handler network recv, scheduled at 200
+End of pending interrupts
+	interrupts: off -> on
+In Machine::Run(), return from OneTick == Tick 185 ==
+In Machine::Run(), into OneInstruction == Tick 185 ==
+Reading VA 52, size 4
+	Translate 52 , read
+phys addr = 52
+	value read = 604110948
+At PC = 52	ADDIU r2,r0,100
+In Machine::Run(), return from OneInstruction  == Tick 185 ==
+In Machine::Run(), into OneTick == Tick 185 ==
+== Tick 186 ==
+	interrupts: on -> off
+Time: 186, interrupts off
+Pending interrupts:
+Interrupt handler timer, scheduled at 200Interrupt handler console read, scheduled at 200Interrupt handler network recv, scheduled at 200
+End of pending interrupts
+	interrupts: off -> on
+In Machine::Run(), return from OneTick == Tick 186 ==
+In Machine::Run(), into OneInstruction == Tick 186 ==
+Reading VA 56, size 4
+	Translate 56 , read
+phys addr = 56
+	value read = 12
+At PC = 56	SYSCALL
+In Machine::OneInstruction, RaiseException(SyscallException, 0), 186
+Exception: syscall
+Received Exception 1 type: 100
+
+In ExceptionHandler(), Received Exception 1 type: 100, 186
+Message received.
+
+Passed! ^_^
+Machine halting!
+
+This is halt
+Ticks: total 186, idle 0, system 50, user 136
+Disk I/O: reads 0, writes 0
+Console I/O: reads 0, writes 0
+Paging: faults 0
+Network I/O: packets received 0, sent 0
